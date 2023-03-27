@@ -1,0 +1,148 @@
+---
+title: ""
+format:
+  revealjs: 
+    slide-number: true
+    chalkboard: 
+      buttons: false
+    preview-links: auto
+    logo: images/lettering_black.svg
+    footer: <https://ropensci.org/>
+---
+
+![](images/presentacion.svg)
+
+# Communities of Pratice
+
+> groups of people who share a 
+passion for something that they know 
+how to do, and who interact regularly 
+in order to learn how to do it better -- _Etienne Wenger_
+
+## rOpenSci
+
+We creates __technical__ and __community infrastructure__ for __open and reproducible research__ that __lowers barriers__ to working with __scientific data__. 
+
+. . .
+
+We __actively foster a welcoming environment__ where __users and developers__ from __different backgrounds__ and __skill levels learn__, __share__ ideas and __innovate together__ openly through shared norms and software.
+
+# Why analyze our community?
+
+![](images/question_dos.png){.r-stretch}
+
+## 
+
+Communities are __built on connections__. 
+
+. . .
+
+We need to know our community connectivity to __plan targeted__ and __effective interventions__ to:
+
+::: {.incremental}
+- improve collaborations.
+- improve information flow.
+- improve knowledge reuse.
+- effective knowledge (co)creation.
+- effective knowledge transfer.
+:::
+
+---
+
+::: {.incremental}
+- Who is connected to whom? Who is not connected? who is being left?
+- Where, and who, are the __hubs__?
+- Where and about what are the __clusters__? Are __silos__?
+- Are new __connection__ forming?
+- Are new __patterns__ of connectivity forming?
+:::
+
+
+# How we can analyze our community connectivity?
+
+![](images/coneccion_dos.png){.r-stretch}
+
+## Social Networks Analysis
+
+Group of individuals who relate to others for a specific purpose, characterized by the existence of information flows.
+
+![](images/red_1.svg){.r-stretch}
+---
+
+## Social Networks Analysis - Basic elements
+
+![](images/red_2.svg){.r-stretch}
+
+---
+
+## Social Networks Analysis - Basic elements
+
+![](images/red_3.svg){.r-stretch}
+---
+
+## Social Networks Analysis - Basic elements
+
+![](images/red_4.svg){.r-stretch}
+
+## Path to contribute at rOpenSci {.smaller}
+
+::: columns
+
+::: {.column width="33%"}
+![](images/escribiendo.png){height="200"}
+
+
+Write a blog post
+
+
+
+![](images/telescopio.png){.fragment height="200"}
+
+Review a package
+:::
+
+::: {.column width="33%"}
+
+![](images/engranajes.png){.fragment height="200"}
+
+Maintain a package
+
+![](images/hablar.png){.fragment height="200"}
+
+Speak at a Comm Call 
+
+:::
+
+::: {.column width="33%"}
+![](images/champion.png){.fragment height="200"}
+
+Become a champion
+
+![](images/idea.png){.fragment height="200"}
+
+Host a coworking session
+
+:::
+
+:::
+
+::: footer
+Learn more: [rOpenSci Community Contributing Guide](https://contributing.ropensci.org/) and [How to Participate with rOpenSci](https://ropensci.org/blog/2022/09/13/contributing-ropensci/)
+:::
+
+## How we can represent and measure contributions? {.smaller}
+
+|Node | Edge | Type of contribution | Source |
+|-----|------|----------------------|--------|
+|Author | coauthorship| blog post, books, talks, interviews| Webpage |
+|Participant | coorganization, speaker, attendee | community calls, co-working sessions| webpage |
+|Mentor/Mentee | mentoring | champions program, package development| Airtable|
+|Developers, Users | Codevelopment | Suite of packages, r-universe| Github, r-universe |
+|Author, editor, reviewers |package peer-review|Software (Stat) Peer-review|Airtable, GitHub |
+
+
+# How we can collect the data?
+
+
+## ¡Gracias, Thank you, Obrigada!
+
