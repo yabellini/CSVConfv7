@@ -143,7 +143,7 @@ Learn more: [rOpenSci Community Contributing Guide](https://contributing.ropensc
 
 # How we can collect the data?
 
-## Let's see an example with our web site
+## Let's see an example with blog post
 
 ``` r
 file_list <- fs::dir_ls(path = "content/blog/", # <1>
@@ -163,7 +163,7 @@ datos <- tibble(fecha = character(), # <2>
 1. Read all the files in the `content/blog/` folder with the `.md` extension  
 2. Create a tibble with the variables to store: _date, title, author, year_ and _contribution_type_.
 
-## Let's see an example with our web site
+## Let's see an example with blog post
 
 ``` r
 for (documento in file_list){ # <3>
@@ -184,6 +184,34 @@ write_csv(datos, "blog_post_authors_2023.csv") # <6>
 5. and add a row in the dataset with the information
 6. After process all the documents, we save the dataset to a CSV file ;-)
 
+## Let's see an example with blog post
+
+<TODO: add Sandro codes to convert the csv to a network format>
+
+## Let's see an example with blog post
+
+Full network 2012-2023
+
+![](images/full_blog_post.png){.r-stretch}
+## Let's see an example with blog post
+
+We can analyze it annually
+
+<TODO: add network>
+
+## Let's see an example with blog post
+
+and greographically
+
+<TODO: add network>
+
+## We can see all contribution together
+
+<TODO: add full network>
+
+## We can identify contributors
+
+<TODO; add metric of contributors>
 
 
 ## ¡Gracias, Thank you, Obrigada!

@@ -544,8 +544,8 @@
 <h1>How we can collect the data?</h1>
 
 </section>
-<section id="lets-see-an-example-with-our-web-site" class="slide level2">
-<h2>Let’s see an example with our web site</h2>
+<section id="lets-see-an-example-with-blog-post" class="slide level2">
+<h2>Let’s see an example with blog post</h2>
 <div class="sourceCode" id="annotated-cell-1"><pre class="sourceCode numberSource r code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode r"><a class="code-annotation-anchor" data-target-cell="annotated-cell-1" data-target-annotation="1" onclick="event.preventDefault();" href="">1</a><span id="annotated-cell-1-1" class="code-annotation-target"><a href="#annotated-cell-1-1"></a>file_list <span class="ot">&lt;-</span> fs<span class="sc">::</span><span class="fu">dir_ls</span>(<span class="at">path =</span> <span class="st">"content/blog/"</span>,</span>
 <span id="annotated-cell-1-2"><a href="#annotated-cell-1-2"></a>                        <span class="at">recurse =</span> <span class="cn">TRUE</span>,</span>
 <span id="annotated-cell-1-3"><a href="#annotated-cell-1-3"></a>                        <span class="at">type =</span> <span class="st">"file"</span>,</span>
@@ -560,17 +560,17 @@
 <dl class="code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-1" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-annotation="1" data-code-cell="annotated-cell-1" data-code-lines="1,2,3,4">Read all the files in the <code>content/blog/</code> folder with the <code>.md</code> extension<br>
+<span data-code-annotation="1" data-code-lines="1,2,3,4" data-code-cell="annotated-cell-1">Read all the files in the <code>content/blog/</code> folder with the <code>.md</code> extension<br>
 </span>
 </dd>
 <dt data-target-cell="annotated-cell-1" data-target-annotation="2">2</dt>
 <dd>
-<span data-code-annotation="2" data-code-cell="annotated-cell-1" data-code-lines="6,7,8,9,10">Create a tibble with the variables to store: <em>date, title, author, year</em> and <em>contribution_type</em>.</span>
+<span data-code-annotation="2" data-code-lines="6,7,8,9,10" data-code-cell="annotated-cell-1">Create a tibble with the variables to store: <em>date, title, author, year</em> and <em>contribution_type</em>.</span>
 </dd>
 </dl>
 </section>
-<section id="lets-see-an-example-with-our-web-site-1" class="slide level2">
-<h2>Let’s see an example with our web site</h2>
+<section id="lets-see-an-example-with-blog-post-1" class="slide level2">
+<h2>Let’s see an example with blog post</h2>
 <div class="sourceCode" id="annotated-cell-2"><pre class="sourceCode numberSource r code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode r"><a class="code-annotation-anchor" data-target-cell="annotated-cell-2" data-target-annotation="3" onclick="event.preventDefault();" href="">3</a><span id="annotated-cell-2-1" class="code-annotation-target"><a href="#annotated-cell-2-1"></a><span class="cf">for</span> (documento <span class="cf">in</span> file_list){</span>
 <a class="code-annotation-anchor" data-target-cell="annotated-cell-2" data-target-annotation="4" onclick="event.preventDefault();" href="">4</a><span id="annotated-cell-2-2" class="code-annotation-target"><a href="#annotated-cell-2-2"></a>  doc <span class="ot">&lt;-</span> rmarkdown<span class="sc">::</span><span class="fu">yaml_front_matter</span>(<span class="at">input =</span> <span class="fu">file.path</span>(documento))</span>
 <a class="code-annotation-anchor" data-target-cell="annotated-cell-2" data-target-annotation="5" onclick="event.preventDefault();" href="">5</a><span id="annotated-cell-2-3" class="code-annotation-target"><a href="#annotated-cell-2-3"></a>  datos <span class="ot">&lt;-</span> tibble<span class="sc">::</span><span class="fu">add_row</span>(datos,</span>
@@ -586,21 +586,45 @@
 <dl class="code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-2" data-target-annotation="3">3</dt>
 <dd>
-<span data-code-annotation="3" data-code-cell="annotated-cell-2" data-code-lines="1">For each markdown document</span>
+<span data-code-annotation="3" data-code-lines="1" data-code-cell="annotated-cell-2">For each markdown document</span>
 </dd>
 <dt data-target-cell="annotated-cell-2" data-target-annotation="4">4</dt>
 <dd>
-<span data-code-annotation="4" data-code-cell="annotated-cell-2" data-code-lines="2">Read the YAML header, extract the value of each variable</span>
+<span data-code-annotation="4" data-code-lines="2" data-code-cell="annotated-cell-2">Read the YAML header, extract the value of each variable</span>
 </dd>
 <dt data-target-cell="annotated-cell-2" data-target-annotation="5">5</dt>
 <dd>
-<span data-code-annotation="5" data-code-cell="annotated-cell-2" data-code-lines="3,4,5,6,7,8">and add a row in the dataset with the information</span>
+<span data-code-annotation="5" data-code-lines="3,4,5,6,7,8" data-code-cell="annotated-cell-2">and add a row in the dataset with the information</span>
 </dd>
 <dt data-target-cell="annotated-cell-2" data-target-annotation="6">6</dt>
 <dd>
-<span data-code-annotation="6" data-code-cell="annotated-cell-2" data-code-lines="12">After process all the documents, we save the dataset to a CSV file ;-)</span>
+<span data-code-annotation="6" data-code-lines="12" data-code-cell="annotated-cell-2">After process all the documents, we save the dataset to a CSV file ;-)</span>
 </dd>
 </dl>
+</section>
+<section id="lets-see-an-example-with-blog-post-2" class="slide level2">
+<h2>Let’s see an example with blog post</h2>
+<p>&lt;TODO: add Sandro codes to convert the csv to a network format&gt;</p>
+</section>
+<section id="lets-see-an-example-with-blog-post-3" class="slide level2">
+<h2>Let’s see an example with blog post</h2>
+<p>Full network 2012-2023</p>
+<p><img data-src="images/full_blog_post.png" class="r-stretch"> ## Let’s see an example with blog post</p>
+<p>We can analyze it annually</p>
+<p>&lt;TODO: add network&gt;</p>
+</section>
+<section id="lets-see-an-example-with-blog-post-4" class="slide level2">
+<h2>Let’s see an example with blog post</h2>
+<p>and greographically</p>
+<p>&lt;TODO: add network&gt;</p>
+</section>
+<section id="we-can-see-all-contribution-together" class="slide level2">
+<h2>We can see all contribution together</h2>
+<p>&lt;TODO: add full network&gt;</p>
+</section>
+<section id="we-can-identify-contributors" class="slide level2">
+<h2>We can identify contributors</h2>
+<p>&lt;TODO; add metric of contributors&gt;</p>
 </section>
 <section id="gracias-thank-you-obrigada" class="slide level2">
 <h2>¡Gracias, Thank you, Obrigada!</h2>
