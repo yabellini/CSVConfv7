@@ -294,10 +294,10 @@ __Top 10 contributors - Blog Post__
 
 ## What else ?
 ::: {.incremental}
-* How we add other type of contributions?
-* The action we are taking to increase our network are working?
-* What other action we can take to connect our members?
-* What other aspect we can map?
+* How can we add other type of contributions?
+* Are the action we are taking to increase our network working?
+* What other action can we take to connect our members?
+* What other aspect can we map?
 :::
 
 ![](images/leer.png){.r-stretch}
