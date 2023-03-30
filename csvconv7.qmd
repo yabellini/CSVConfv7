@@ -253,7 +253,7 @@ TODO: add Sandro codes to convert the csv to a network format
 
 ![](images/full_network.png){.r-stretch}
 
-## and analyze it greographically 
+## and analyze it geographically 
 
 ![](images/countries.png){.r-stretch}
 
