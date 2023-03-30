@@ -86,45 +86,44 @@ Group of individuals who relate to others for a specific purpose, characterized 
 
 ## Path to contribute at rOpenSci {.smaller}
 
-::: columns
+:::: {.columns}
 
 ::: {.column width="33%"}
-![](images/escribiendo.png){height="200"}
-
+![](images/escribiendo.png){height="200" fig-align="center"}
 
 Write a blog post
 
 
 
-![](images/telescopio.png){.fragment height="200"}
+![](images/telescopio.png){.fragment height="200" fig-align="center"}
 
 Review a package
 :::
 
 ::: {.column width="33%"}
 
-![](images/engranajes.png){.fragment height="200"}
+![](images/engranajes.png){.fragment height="200" fig-align="center"}
 
 Maintain a package
 
-![](images/hablar.png){.fragment height="200"}
+![](images/hablar.png){.fragment height="200" fig-align="center"}
 
 Speak at a Comm Call 
 
 :::
 
 ::: {.column width="33%"}
-![](images/champion.png){.fragment height="200"}
+![](images/champion.png){.fragment height="200" fig-align="center"}
 
 Become a champion
 
-![](images/idea.png){.fragment height="200"}
+![](images/idea.png){.fragment height="200" fig-align="center"}
 
 Host a coworking session
 
 :::
 
-:::
+::::
 
 ::: footer
 Learn more: [rOpenSci Community Contributing Guide](https://contributing.ropensci.org/) and [How to Participate with rOpenSci](https://ropensci.org/blog/2022/09/13/contributing-ropensci/)
@@ -132,18 +131,59 @@ Learn more: [rOpenSci Community Contributing Guide](https://contributing.ropensc
 
 ## How we can represent and measure contributions? {.smaller}
 
+
+|Node | Edge | Type of contribution | Source |
+|-----|------|----------------------|--------|
+|Author | coauthorship| blog post, books, talks, interviews| Webpage |
+
+
+## How we can represent and measure contributions? {.smaller}
+
+
+|Node | Edge | Type of contribution | Source |
+|-----|------|----------------------|--------|
+|Author | coauthorship| blog post, books, talks, interviews| Webpage |
+|Participant | coorganization, speaker, attendee | community calls, co-working sessions, unconf| webpage |
+
+
+
+## How we can represent and measure contributions? {.smaller}
+
+
+|Node | Edge | Type of contribution | Source |
+|-----|------|----------------------|--------|
+|Author | coauthorship| blog post, books, talks, interviews| Webpage |
+|Participant | coorganization, speaker, attendee | community calls, co-working sessions| webpage |
+|Mentor/Mentee | mentoring | champions program, package development| Airtable|
+
+
+## How we can represent and measure contributions? {.smaller}
+
+
+|Node | Edge | Type of contribution | Source |
+|-----|------|----------------------|--------|
+|Author | coauthorship| blog post, books, talks, interviews| Webpage |
+|Participant | coorganization, speaker, attendee | community calls, co-working sessions| webpage |
+|Mentor/Mentee | mentoring | champions program, package development| Airtable|
+|Developers, Users | development | Suite of packages, r-universe| Github, r-universe |
+
+
+
+## How we can represent and measure contributions? {.smaller}
+
+
 |Node | Edge | Type of contribution | Source |
 |-----|------|----------------------|--------|
 |Author | coauthorship| blog post, books, talks, interviews| Webpage |
 |Participant | coorganization, speaker, attendee | community calls, co-working sessions| webpage |
 |Mentor/Mentee | mentoring | champions program, package development| Airtable|
 |Developers, Users | Codevelopment | Suite of packages, r-universe| Github, r-universe |
-|Author, editor, reviewers |package peer-review|Software (Stat) Peer-review|Airtable, GitHub |
+|Author, editor, reviewers |package peer-review|Software & Stat Peer-review|Airtable, GitHub |
 
 
 # How we can collect the data?
 
-## Let's see an example with blog post
+## Let's see an example with the Blog
 
 ``` r
 file_list <- fs::dir_ls(path = "content/blog/", # <1>
@@ -163,7 +203,7 @@ datos <- tibble(fecha = character(), # <2>
 1. Read all the files in the `content/blog/` folder with the `.md` extension  
 2. Create a tibble with the variables to store: _date, title, author, year_ and _contribution_type_.
 
-## Let's see an example with blog post
+## Let's see an example with the Blog
 
 ``` r
 for (documento in file_list){ # <3>
@@ -184,35 +224,87 @@ write_csv(datos, "blog_post_authors_2023.csv") # <6>
 5. and add a row in the dataset with the information
 6. After process all the documents, we save the dataset to a CSV file ;-)
 
-## Let's see an example with blog post
+## Let's see an example with the Blog
 
-<TODO: add Sandro codes to convert the csv to a network format>
+TODO: add Sandro codes to convert the csv to a network format
 
-## Let's see an example with blog post
-
-Full network 2012-2023
+## Blog-Post full network 2013-2023 
 
 ![](images/full_blog_post.png){.r-stretch}
-## Let's see an example with blog post
 
-We can analyze it annually
+##  We can analyze it annually 
 
-<TODO: add network>
 
-## Let's see an example with blog post
+:::: {.columns}
 
-and greographically
+::: {.column width="50%"}
+![](images/blog_post_2014.png){height="500" fig-align="center"}
+:::
 
-<TODO: add network>
+::: {.column width="50%"}
+![](images/blog_post_2022.png){height="500" fig-align="center"}
+:::
 
-## We can see all contribution together
+::::
 
-<TODO: add full network>
 
-## We can identify contributors
+## We can see all contribution together 
 
-<TODO; add metric of contributors>
+
+![](images/full_network.png){.r-stretch}
+
+## and analyze it greographically 
+
+![](images/countries.png){.r-stretch}
+
+
+## We can identify contributors {.smaller}
+
+__Top 10 contributors - Full Network__
+
+|Name|Contributions|Degree|Centrality|Page Rank|
+|----|-----:|-----:|-----:|-----:|
+|Maelle Salmon|	254|	110|	0,12|	0,019|
+|Scott Chamberlain|	250|	134|	0,22|	0,022|
+|Karthik Ram|	189	|67	|0,06|	0,014|
+|Noam Ross|	189	|73	|0,09|	0,013|
+|Anna Krystalli|	118|	39	|0,01|	0,008|
+|Laura DeCicco|	96|	55	|0,06|	0,007|
+|Brooke Anderson|	91|	43|	0,02|0,006|
+|Mark Padgham|	89|	53	|0,03|	0,007|
+|Melina Vidoni|	85|	21	|0,02|	0,006|
+|Mauro Lepore|	74|	35	|0,02|	0,005|
+
+## We can identify contributors {.smaller}
+
+__Top 10 contributors - Blog Post__
+
+|Name|Contributions|Degree|Centrality|Page Rank|
+|----|-----:|-----:|-----:|-----:|
+|Scott Chamberlain|		98|	15|	0.03|	0.02|
+|Stefanie Butland|		72|	18|	0.04|	0.01|
+|Maëlle Salmon|		62	|27|	0.05|	0.03|
+|Jeroen Ooms|		60|	6|	0.01|	0.006|
+|Karthik Ram|		50|	19|	0.01|	0.03|
+|Noam Ross|		29|	33|	0.22|	0.03|
+|The rOpenSci Team|		24|	10|	0.001|	0.005|
+|Yanina Bellini Saibene|		22|	10|	0.003|	0.01|
+|Steffi LaZerte|		19|	15|	0.05|	0.01|
+|Mark Padgham|		16|	22|	0.06|	0.01|
+
+## What else ?
+
+* How we add other type of contributions?
+* The action we are taking to increase our network are working?
+* What other action we can take to connect our members?
+* What other aspect we can map?
+
+![](images/leer.png){.r-stretch}
 
 
 ## ¡Gracias, Thank you, Obrigada!
+
+### Time for question and comments ;-)
+
+![](images/hi-five.png){.r-stretch}
 
