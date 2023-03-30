@@ -52,7 +52,7 @@ We need to know our community connectivity to __plan targeted__ and __effective 
 ::: {.incremental}
 - Who is connected to whom? Who is not connected? who is being left?
 - Where, and who, are the __hubs__?
-- Where and about what are the __clusters__? Are __silos__?
+- Where and about what are the __clusters__? Are there __silos__?
 - Are new __connection__ forming?
 - Are new __patterns__ of connectivity forming?
 :::
@@ -293,11 +293,12 @@ __Top 10 contributors - Blog Post__
 |Mark Padgham|		16|	22|	0.06|	0.01|
 
 ## What else ?
-
+::: {.incremental}
 * How we add other type of contributions?
 * The action we are taking to increase our network are working?
 * What other action we can take to connect our members?
 * What other aspect we can map?
+:::
 
 ![](images/leer.png){.r-stretch}
 
