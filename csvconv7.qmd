@@ -12,20 +12,63 @@ format:
 
 ![](images/presentacion.svg)
 
-# Communities of Pratice
+::: {.notes}
+Hello, my name is Yani Bellini Saibene, I made this work with Sandro Camargo, who send cheers from Brasil.
+Welcome to "TELL ME WHO YOU HANG OUT WITH, AND I WILL TELL YOU WHO YOU ARE". In Spanish: "Dime con quien andas y te diré quien eres". This is a well-known phrase in Argentina.  It refers to the groups of people we get together with to do things: the swim team, the book club, the knitters, our college friends or the R-Ladies chapter. In this talk we are going to refer to a special kind of group called Community of Practice.
+:::
 
-> groups of people who share a 
-passion for something that they know 
-how to do, and who interact regularly 
-in order to learn how to do it better -- _Etienne Wenger_
+# Communities of Practice
 
-## rOpenSci
+> groups of people who **share a 
+passion** for something that they **know 
+how to do**, and who **interact regularly** 
+in order to **learn how to do it better** -- _Etienne Wenger_
 
-We creates __technical__ and __community infrastructure__ for __open and reproducible research__ that __lowers barriers__ to working with __scientific data__. 
+::: {.notes}
+Why I'm talking about this? because In June last year, I become community Manager of rOpenSci, a community of practice
+:::
 
-. . .
+## rOpenSci {.smaller}
 
-We __actively foster a welcoming environment__ where __users and developers__ from __different backgrounds__ and __skill levels learn__, __share__ ideas and __innovate together__ openly through shared norms and software.
+We creates __technical__ and __social infrastructure__ for __open and reproducible research__ that __lowers barriers__ to working with __scientific data__. 
+
+:::: {.columns}
+
+::: {.column width="60%"}
+::: {.incremental}
+- A suite of carefully vetted, federated R software tools
+- Making the right data, tools and best practices more discoverable
+- Welcoming and diverse community
+- Building capacity of software users and developers and fostering a sense of pride in their work 
+- Promoting advocacy for a culture of data sharing and reusable software
+:::
+:::
+
+::: {.column width="40%"}
+![](images/computadora_dos.png) 
+:::
+
+::::
+
+::: {.notes}
+We do this creating a suite of carefully vetted, federated R software tools. Developers of research software send their package to our review process, and after they pass, the package is part of our suite. Developers get support on from our staff and from the community. Users get high quality software to do science.
+
+Making the right data, tools and best practices more discoverable. Our R-Universe platform allows to publish and search 18000+ packages, withour any size limittion and provide binaries for severals SO. 
+
+Welcoming and diverse community through a code of conduct, our Champions Program and our multilingual publishing efforts. 
+
+Building capacity of software users and developers and fostering a sense of pride in their work with the projets I already mention, but also by publishing books, organizing community call and co-working session, higlighing developer with interviews and creating contect on our web pages, forum and newsletter.
+
+:::
+
+
+## Community Manager
+
+A community manager is someone who facilitates the activities of a community and the interactions between community members. These activities may or may not take place within a dedicated online network, but likely involve the use of online tools. Community management may be considered as “in-reach” rather than “outreach” or public engagement.
+
+::: footer
+Learn more: [What is Community Engagement Within Science?](https://www.cscce.org/about/community-engagement/)
+:::
 
 # Why analyze our community?
 
