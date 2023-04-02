@@ -86,7 +86,7 @@ A community manager in the context of a community of practice is a person that f
 ::: {.notes}
 essentially because by knowing your community you can do a better job in the role of community manager.
 
-rOpenSci records a lot of data and generates statistics and summaries, for example, how many packages we reviewed, how many blog posts we wrote, how many community calls we organized and how many people came. 
+rOpenSci records a lot of data and generates statistics and summaries, for example, how many packages we reviewed, how many blog posts we wrote, how many community calls we organized and how many people came. This are very useful and show us an overal idea of our community and our activities.
 
 :::
 
@@ -107,16 +107,27 @@ We need to know our community connectivity to __plan targeted__ and __effective 
 - effective knowledge transfer.
 :::
 
+
+::: {.notes}
+Now, communities are built on connections, and those summaries and number don't give us many information about  the growth and strength of professional interpersonal connections in our community. 
+
+:::
 ---
 
 ::: {.incremental}
-- Who is connected to whom? Who is not connected? who is being left?
+- Who is connected to whom? Who is not connected?
 - Where, and who, are the __hubs__?
 - Where and about what are the __clusters__? Are there __silos__?
 - Are new __connection__ forming?
 - Are new __patterns__ of connectivity forming?
+- How was our network __before and after__ the introduction of an activity?
 :::
 
+::: {.notes}
+We will try to answer questions like:
+
+
+:::
 
 # How we can analyze our community connectivity?
 
@@ -128,6 +139,12 @@ Group of individuals who relate to others for a specific purpose, characterized 
 
 ![](images/red_1.svg){.r-stretch}
 ---
+
+::: {.notes}
+Here is where Social Networks Analysis comes into play. I'm not talking about twitter or instagram here, I'm talking about networks build by individuals u organization that have some kind of relationship.
+
+
+:::
 
 ## Social Networks Analysis - Basic elements
 
@@ -143,6 +160,17 @@ Group of individuals who relate to others for a specific purpose, characterized 
 ## Social Networks Analysis - Basic elements
 
 ![](images/red_4.svg){.r-stretch}
+
+
+## Social Networks Analysis - Basic elements
+
+
+
+::: {.notes}
+You can map the nodes and edges to explore the connections and patterns that exist
+and make conclusions based off of that exploration, for example:
+
+:::
 
 ## Path to contribute at rOpenSci {.smaller}
 
