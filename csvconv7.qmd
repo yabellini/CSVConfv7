@@ -64,15 +64,32 @@ Building capacity of software users and developers and fostering a sense of prid
 
 ## Community Manager
 
-A community manager is someone who facilitates the activities of a community and the interactions between community members. These activities may or may not take place within a dedicated online network, but likely involve the use of online tools. Community management may be considered as “in-reach” rather than “outreach” or public engagement.
+> **Facilitates** the **activities** of a community and the **interactions** between **community members.** Community management may be considered as “in-reach” rather than “outreach” or public engagement. - CSCCE
+
+![](images/skills.svg) 
+
 
 ::: footer
-Learn more: [What is Community Engagement Within Science?](https://www.cscce.org/about/community-engagement/)
+Learn more: [What is Community Engagement Within Science?](https://www.cscce.org/about/community-engagement/), [What does a scientific community manager do?](https://www.cscce.org/2021/01/25/what-does-a-scientific-community-manager-do-check-out-the-cscce-skills-wheel-and-accompanying-guidebook/)
 :::
+
+::: {.notes}
+A community manager in the context of a community of practice is a person that facilitates the activities of a community and the interaction with their members.  Have responsabilities in task in technical, interpersonal, communication, program management and program development aspect.
+
+:::
+
 
 # Why analyze our community?
 
 ![](images/question_dos.png){.r-stretch}
+
+::: {.notes}
+essentially because by knowing your community you can do a better job in the role of community manager.
+
+rOpenSci records a lot of data and generates statistics and summaries, for example, how many packages we reviewed, how many blog posts we wrote, how many community calls we organized and how many people came. 
+
+:::
+
 
 ## 
 
