@@ -164,11 +164,70 @@ Here is where Social Networks Analysis comes into play. I'm not talking about tw
 
 ## Social Networks Analysis - Basic elements
 
-
+![](images/red_full.svg){.r-stretch}
 
 ::: {.notes}
 You can map the nodes and edges to explore the connections and patterns that exist
-and make conclusions based off of that exploration, for example:
+and make conclusions based off of that exploration, for example, here we have map network, with the people as nodes and the edges as collaborations, for example, write a blog post together, being co-authors.
+
+:::
+
+## Social Networks Analysis - Basic elements
+
+![](images/red_full_degree.svg){.r-stretch}
+
+::: {.notes}
+The degree of a node is how many connection have, for example this node has 6 connection, so the degree is 6.  This other have 5 connections so the degree is 5. higer degree, more connected is the node.
+
+:::
+
+
+## Social Networks Analysis - Basic elements
+
+![](images/red_full_multiplexity.svg){.r-stretch}
+
+::: {.notes}
+The multiplexity show the number of connection between two nodes, for example
+you co-author more than one blog post.
+
+:::
+
+## Social Networks Analysis - Basic elements
+
+![](images/red_full_centrality.svg){.r-stretch}
+
+::: {.notes}
+Betweenness centrality measures the number of times a node lies on the shortest path between other nodes. What it tells us: This measure shows which nodes are 'bridges' between nodes in a network.
+
+:::
+
+## Social Networks Analysis - Basic elements
+
+![](images/red_full_closeness.svg){.r-stretch}
+
+::: {.notes}
+Scores each node based on how close it is to all other nodes in the network.
+It is useful for finding the individuals who are best placed to influence the entire network most quickly.
+:::
+
+
+## Social Networks Analysis - Basic elements
+
+![](images/red_full_clusters.svg){.r-stretch}
+
+::: {.notes}
+Clusters or communities are groups that work together, their nodes have high number of connection between them. A clique cluster have all thier memebers interconected and a silo don't have connection with other clusters on the network.
+
+:::
+
+# How we can collect the data?
+
+![](images/charlando.png){.r-stretch}
+
+::: {.notes}
+The methods suggested in the bibliography are surveys to the members of the community where they are asked with whom they have contact, what type of relationship. Or a community mapping work with the members by bringing them together for one or two days of work to diagram these relationships.
+
+As you can imagine, this can be costly in time and money.  So we thought, is it possible that we could collect that data in an automated or semi-automated way? Is it possible that we already have that data in another format and we can accommodate it to analyze the connectivity of our community?
 
 :::
 
@@ -269,7 +328,7 @@ Learn more: [rOpenSci Community Contributing Guide](https://contributing.ropensc
 |Author, editor, reviewers |package peer-review|Software & Stat Peer-review|Airtable, GitHub |
 
 
-# How we can collect the data?
+
 
 ## Let's see an example with the Blog
 
@@ -393,7 +452,9 @@ __Top 10 contributors - Blog Post__
 
 ## ¡Gracias, Thank you, Obrigada!
 
-### Time for questions and comments ;-)
+- The pictures are adaptation by me and my 7yo son of freepick (TODO: add link).
+- Thanks to the rOpenSci staff Team for the feedback on this talk.
+
 
 ![](images/hi-five.png){.r-stretch}
 
