@@ -225,9 +225,14 @@ Clusters or communities are groups that work together, their nodes have high num
 ![](images/charlando.png){.r-stretch}
 
 ::: {.notes}
-The methods suggested in the bibliography are surveys to the members of the community where they are asked with whom they have contact, what type of relationship. Or a community mapping work with the members by bringing them together for one or two days of work to diagram these relationships.
+For this type of analysis we need data that reveal some kind of connection between the actors in a network.
 
-As you can imagine, this can be costly in time and money.  So we thought, is it possible that we could collect that data in an automated or semi-automated way? Is it possible that we already have that data in another format and we can accommodate it to analyze the connectivity of our community?
+The most common data collection methods used in social network analysis are surveys and interviews collect from members in the network. As you can imagine, this can be costly in time and money.  
+
+The data also could come from existing data, like data on social
+media connections, and it can come from your own knowledge of the relationships that exist in the network.
+
+So we thought, is it possible that we already have that data in another format and we can accommodate it to analyze the connectivity of our community? is it possible that we could collect that data in an automated or semi-automated way to repeat the analysis?
 
 :::
 
@@ -274,6 +279,19 @@ Host a coworking session
 
 ::: footer
 Learn more: [rOpenSci Community Contributing Guide](https://contributing.ropensci.org/) and [How to Participate with rOpenSci](https://ropensci.org/blog/2022/09/13/contributing-ropensci/)
+:::
+
+::: {.notes}
+Fortunately at rOpenSci we have a contribution guide, there is a whole book describing the different ways you can contribute to the community. For example, you can
+
+Write a blog post
+Review a package
+Maintain a package
+Speak at a Community Call
+Become a champion
+Host a coworking session
+
+Many of these forms of contribution can be made with other people and there we have our nodes and a connection between them.
 :::
 
 ## How we can represent and measure contributions? {.smaller}
