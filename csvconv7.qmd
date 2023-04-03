@@ -319,7 +319,7 @@ Many of these forms of contribution can be made with other people and there we h
 |-----|------|----------------------|--------|
 |Author | coauthorship| blog post, books, talks, interviews| Webpage |
 |Participant | coorganization, speaker, attendee | community calls, co-working sessions| webpage |
-|Mentor/Mentee | mentoring | champions program, package development| Airtable|
+|Mentor/Mentee | mentoring | champions program, package development| Data base, webpage|
 
 
 ## How we can represent and measure contributions? {.smaller}
@@ -329,22 +329,20 @@ Many of these forms of contribution can be made with other people and there we h
 |-----|------|----------------------|--------|
 |Author | coauthorship| blog post, books, talks, interviews| Webpage |
 |Participant | coorganization, speaker, attendee | community calls, co-working sessions| webpage |
-|Mentor/Mentee | mentoring | champions program, package development| Airtable|
+|Mentor/Mentee | mentoring | champions program, package development| Data base, webpage|
 |Developers, Users | development | Suite of packages, r-universe| Github, r-universe |
 
 
 
 ## How we can represent and measure contributions? {.smaller}
 
-
 |Node | Edge | Type of contribution | Source |
 |-----|------|----------------------|--------|
 |Author | coauthorship| blog post, books, talks, interviews| Webpage |
 |Participant | coorganization, speaker, attendee | community calls, co-working sessions| webpage |
-|Mentor/Mentee | mentoring | champions program, package development| Airtable|
 |Developers, Users | Codevelopment | Suite of packages, r-universe| Github, r-universe |
-|Author, editor, reviewers |package peer-review|Software & Stat Peer-review|Airtable, GitHub |
-
+|Author, editor, reviewers |package peer-review|Software & Stat Peer-review|Data base, GitHub |
+|Mentor/Mentee | mentoring | champions program, package development| Data base, webpage|
 
 
 

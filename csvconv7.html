@@ -705,8 +705,10 @@
 <h1>How we can collect the data?</h1>
 <img data-src="images/charlando.png" class="r-stretch">
 <aside class="notes">
-<p>The methods suggested in the bibliography are surveys to the members of the community where they are asked with whom they have contact, what type of relationship. Or a community mapping work with the members by bringing them together for one or two days of work to diagram these relationships.</p>
-<p>As you can imagine, this can be costly in time and money. So we thought, is it possible that we could collect that data in an automated or semi-automated way? Is it possible that we already have that data in another format and we can accommodate it to analyze the connectivity of our community?</p>
+<p>For this type of analysis we need data that reveal some kind of connection between the actors in a network.</p>
+<p>The most common data collection methods used in social network analysis are surveys and interviews collect from members in the network. As you can imagine, this can be costly in time and money.</p>
+<p>The data also could come from existing data, like data on social media connections, and it can come from your own knowledge of the relationships that exist in the network.</p>
+<p>So we thought, is it possible that we already have that data in another format and we can accommodate it to analyze the connectivity of our community? is it possible that we could collect that data in an automated or semi-automated way to repeat the analysis?</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -766,6 +768,21 @@
 <div class="footer">
 <p>Learn more: <a href="https://contributing.ropensci.org/">rOpenSci Community Contributing Guide</a> and <a href="https://ropensci.org/blog/2022/09/13/contributing-ropensci/">How to Participate with rOpenSci</a></p>
 </div>
+<aside class="notes">
+<p>Fortunately at rOpenSci we have a contribution guide, there is a whole book describing the different ways you can contribute to the community. For example, you can</p>
+<p>Write a blog post Review a package Maintain a package Speak at a Community Call Become a champion Host a coworking session</p>
+<p>Many of these forms of contribution can be made with other people and there we have our nodes and a connection between them.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="how-we-can-represent-and-measure-contributions" class="slide level2 smaller">
 <h2>How we can represent and measure contributions?</h2>
@@ -855,7 +872,7 @@
 <td>Mentor/Mentee</td>
 <td>mentoring</td>
 <td>champions program, package development</td>
-<td>Airtable</td>
+<td>Data base, webpage</td>
 </tr>
 </tbody>
 </table>
@@ -894,7 +911,7 @@
 <td>Mentor/Mentee</td>
 <td>mentoring</td>
 <td>champions program, package development</td>
-<td>Airtable</td>
+<td>Data base, webpage</td>
 </tr>
 <tr class="even">
 <td>Developers, Users</td>
@@ -936,22 +953,22 @@
 <td>webpage</td>
 </tr>
 <tr class="odd">
-<td>Mentor/Mentee</td>
-<td>mentoring</td>
-<td>champions program, package development</td>
-<td>Airtable</td>
-</tr>
-<tr class="even">
 <td>Developers, Users</td>
 <td>Codevelopment</td>
 <td>Suite of packages, r-universe</td>
 <td>Github, r-universe</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Author, editor, reviewers</td>
 <td>package peer-review</td>
 <td>Software &amp; Stat Peer-review</td>
-<td>Airtable, GitHub</td>
+<td>Data base, GitHub</td>
+</tr>
+<tr class="odd">
+<td>Mentor/Mentee</td>
+<td>mentoring</td>
+<td>champions program, package development</td>
+<td>Data base, webpage</td>
 </tr>
 </tbody>
 </table>
@@ -972,12 +989,12 @@
 <dl class="code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-1" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-cell="annotated-cell-1" data-code-annotation="1" data-code-lines="1,2,3,4">Read all the files in the <code>content/blog/</code> folder with the <code>.md</code> extension<br>
+<span data-code-cell="annotated-cell-1" data-code-lines="1,2,3,4" data-code-annotation="1">Read all the files in the <code>content/blog/</code> folder with the <code>.md</code> extension<br>
 </span>
 </dd>
 <dt data-target-cell="annotated-cell-1" data-target-annotation="2">2</dt>
 <dd>
-<span data-code-cell="annotated-cell-1" data-code-annotation="2" data-code-lines="6,7,8,9,10">Create a tibble with the variables to store: <em>date, title, author, year</em> and <em>contribution_type</em>.</span>
+<span data-code-cell="annotated-cell-1" data-code-lines="6,7,8,9,10" data-code-annotation="2">Create a tibble with the variables to store: <em>date, title, author, year</em> and <em>contribution_type</em>.</span>
 </dd>
 </dl>
 </section>
@@ -998,19 +1015,19 @@
 <dl class="code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-2" data-target-annotation="3">3</dt>
 <dd>
-<span data-code-cell="annotated-cell-2" data-code-annotation="3" data-code-lines="1">For each markdown document</span>
+<span data-code-cell="annotated-cell-2" data-code-lines="1" data-code-annotation="3">For each markdown document</span>
 </dd>
 <dt data-target-cell="annotated-cell-2" data-target-annotation="4">4</dt>
 <dd>
-<span data-code-cell="annotated-cell-2" data-code-annotation="4" data-code-lines="2">Read the YAML header, extract the value of each variable</span>
+<span data-code-cell="annotated-cell-2" data-code-lines="2" data-code-annotation="4">Read the YAML header, extract the value of each variable</span>
 </dd>
 <dt data-target-cell="annotated-cell-2" data-target-annotation="5">5</dt>
 <dd>
-<span data-code-cell="annotated-cell-2" data-code-annotation="5" data-code-lines="3,4,5,6,7,8">and add a row in the dataset with the information</span>
+<span data-code-cell="annotated-cell-2" data-code-lines="3,4,5,6,7,8" data-code-annotation="5">and add a row in the dataset with the information</span>
 </dd>
 <dt data-target-cell="annotated-cell-2" data-target-annotation="6">6</dt>
 <dd>
-<span data-code-cell="annotated-cell-2" data-code-annotation="6" data-code-lines="12">After process all the documents, we save the dataset to a CSV file ;-)</span>
+<span data-code-cell="annotated-cell-2" data-code-lines="12" data-code-annotation="6">After process all the documents, we save the dataset to a CSV file ;-)</span>
 </dd>
 </dl>
 </section>
