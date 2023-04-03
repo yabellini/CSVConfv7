@@ -1,3 +1,6 @@
 Slide 1:
 
 Esta es una frase bastante conocida en Argentina.  Se refiere a los grupos de personas con los que nos juntamos para hacer  cosas juntos: el equipo de natación, el club de lectura, las tejedoras, nuestros amigos de la universidad o el capítulo de R-Ladies. En esta charla nos vamos a referir a un tipo especial de grupo llamado Comunidad de práctica.
+
+Slide:
+Afortunadamente en rOpenSci tenemos una guia de contribuciones, hay todo un libro que describe los diferentes caminos que podes tomar para contribuir a la comunidad. Por ejemplo, podes
