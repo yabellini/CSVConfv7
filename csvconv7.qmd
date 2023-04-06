@@ -514,7 +514,7 @@ __Top 10 contributors - Full Network__
 
 :::
 
-## Work in progress?
+## Work in progress 
 ::: {.incremental}
 * Complete and go deep with our analysis.
 * How can we add other types of contributions?
