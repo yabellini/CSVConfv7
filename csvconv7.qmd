@@ -111,14 +111,21 @@ We need to know our community connectivity to __plan targeted__ and __effective 
 
 ::: {.notes}
 Now, communities are built on connections, and those summaries and number don't give us many information about  the growth and strength of professional interpersonal connections in our community. 
-
 :::
----
+
+## Answer these questions
+
+### At a given moment in time
 
 ::: {.incremental}
 - Who is connected to whom? Who is not connected?
 - Where, and who, are the __hubs__?
 - Where and about what are the __clusters__? Are there __silos__?
+:::
+
+### Changes over time
+
+::: {.incremental}
 - Are new __connection__ forming?
 - Are new __patterns__ of connectivity forming?
 - How was our network __before and after__ the introduction of an activity?
@@ -126,7 +133,6 @@ Now, communities are built on connections, and those summaries and number don't 
 
 ::: {.notes}
 We will try to answer questions like:
-
 
 :::
 
