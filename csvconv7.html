@@ -740,26 +740,26 @@
 </div><div class="column" style="width:33%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="images/engranajes.png" class="fragment" height="200"></p>
+<p><img data-src="images/engranajes.png" class="fragment" height="180"></p>
 </figure>
 </div>
 <p>Maintain a package</p>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="images/hablar.png" class="fragment" height="200"></p>
+<p><img data-src="images/hablar.png" class="fragment" height="180"></p>
 </figure>
 </div>
 <p>Speak at a Comm Call</p>
 </div><div class="column" style="width:33%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="images/champion.png" class="fragment" height="200"></p>
+<p><img data-src="images/champion.png" class="fragment" height="180"></p>
 </figure>
 </div>
 <p>Become a champion</p>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="images/idea.png" class="fragment" height="200"></p>
+<p><img data-src="images/idea.png" class="fragment" height="180"></p>
 </figure>
 </div>
 <p>Host a coworking session</p>
@@ -769,8 +769,7 @@
 <p>Learn more: <a href="https://contributing.ropensci.org/">rOpenSci Community Contributing Guide</a> and <a href="https://ropensci.org/blog/2022/09/13/contributing-ropensci/">How to Participate with rOpenSci</a></p>
 </div>
 <aside class="notes">
-<p>Fortunately at rOpenSci we have a contribution guide, there is a whole book describing the different ways you can contribute to the community. For example, you can</p>
-<p>Write a blog post Review a package Maintain a package Speak at a Community Call Become a champion Host a coworking session</p>
+<p>Fortunately at rOpenSci we have a contribution guide, there is a whole book describing the different ways you can contribute to the community. For example, you can, Write a blog post, Review a package, Maintain a package, Speak at a Community Call, Become a champion, Host a coworking session.</p>
 <p>Many of these forms of contribution can be made with other people and there we have our nodes and a connection between them.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -831,7 +830,7 @@
 </tr>
 <tr class="even">
 <td>Participant</td>
-<td>coorganization, speaker, attendee</td>
+<td>coorganization, cospeaking, coattendence</td>
 <td>community calls, co-working sessions, unconf</td>
 <td>webpage</td>
 </tr>
@@ -869,10 +868,10 @@
 <td>webpage</td>
 </tr>
 <tr class="odd">
-<td>Mentor/Mentee</td>
-<td>mentoring</td>
-<td>champions program, package development</td>
-<td>Data base, webpage</td>
+<td>Developers, Users</td>
+<td>Codevelopment</td>
+<td>Suite of packages, r-universe</td>
+<td>Github, r-universe</td>
 </tr>
 </tbody>
 </table>
@@ -908,16 +907,16 @@
 <td>webpage</td>
 </tr>
 <tr class="odd">
-<td>Mentor/Mentee</td>
-<td>mentoring</td>
-<td>champions program, package development</td>
-<td>Data base, webpage</td>
-</tr>
-<tr class="even">
 <td>Developers, Users</td>
 <td>development</td>
 <td>Suite of packages, r-universe</td>
 <td>Github, r-universe</td>
+</tr>
+<tr class="even">
+<td>Author, editor, reviewers</td>
+<td>package peer-review</td>
+<td>Software &amp; Stat Peer-review</td>
+<td>Data base, GitHub</td>
 </tr>
 </tbody>
 </table>
@@ -977,72 +976,53 @@
 <h2>Let’s see an example with the Blog</h2>
 
 <img data-src="images/yaml.png" class="r-stretch quarto-figure-center"></section>
-<section id="lets-see-an-example-with-the-blog-1" class="slide level2">
+<section id="lets-see-an-example-with-the-blog-1" class="slide level2 smaller">
 <h2>Let’s see an example with the Blog</h2>
-<div class="sourceCode" id="annotated-cell-1"><pre class="sourceCode numberSource r code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode r"><a class="code-annotation-anchor" data-target-cell="annotated-cell-1" data-target-annotation="1" onclick="event.preventDefault();" href="">1</a><span id="annotated-cell-1-1" class="code-annotation-target"><a href="#annotated-cell-1-1"></a>file_list <span class="ot">&lt;-</span> fs<span class="sc">::</span><span class="fu">dir_ls</span>(<span class="at">path =</span> <span class="st">"content/blog/"</span>,</span>
-<span id="annotated-cell-1-2"><a href="#annotated-cell-1-2"></a>                        <span class="at">recurse =</span> <span class="cn">TRUE</span>,</span>
-<span id="annotated-cell-1-3"><a href="#annotated-cell-1-3"></a>                        <span class="at">type =</span> <span class="st">"file"</span>,</span>
-<span id="annotated-cell-1-4"><a href="#annotated-cell-1-4"></a>                        <span class="at">glob =</span> <span class="st">"*.md"</span>)</span>
-<span id="annotated-cell-1-5"><a href="#annotated-cell-1-5"></a></span>
-<a class="code-annotation-anchor" data-target-cell="annotated-cell-1" data-target-annotation="2" onclick="event.preventDefault();" href="">2</a><span id="annotated-cell-1-6" class="code-annotation-target"><a href="#annotated-cell-1-6"></a>datos <span class="ot">&lt;-</span> <span class="fu">tibble</span>(<span class="at">fecha =</span> <span class="fu">character</span>(),</span>
-<span id="annotated-cell-1-7"><a href="#annotated-cell-1-7"></a>                <span class="at">titulo =</span> <span class="fu">character</span>(),</span>
-<span id="annotated-cell-1-8"><a href="#annotated-cell-1-8"></a>                <span class="at">autor =</span> <span class="fu">character</span>(),</span>
-<span id="annotated-cell-1-9"><a href="#annotated-cell-1-9"></a>                <span class="at">year =</span> <span class="fu">character</span>(),</span>
-<span id="annotated-cell-1-10"><a href="#annotated-cell-1-10"></a>                <span class="at">contribution_type =</span> <span class="fu">character</span>())</span>
-<span id="annotated-cell-1-11"><a href="#annotated-cell-1-11"></a></span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<dl class="code-annotation-container-grid">
-<dt data-target-cell="annotated-cell-1" data-target-annotation="1">1</dt>
-<dd>
-<span data-code-cell="annotated-cell-1" data-code-lines="1,2,3,4" data-code-annotation="1">Read all the files in the <code>content/blog/</code> folder with the <code>.md</code> extension<br>
-</span>
-</dd>
-<dt data-target-cell="annotated-cell-1" data-target-annotation="2">2</dt>
-<dd>
-<span data-code-cell="annotated-cell-1" data-code-lines="6,7,8,9,10" data-code-annotation="2">Create a tibble with the variables to store: <em>date, title, author, year</em> and <em>contribution_type</em>.</span>
-</dd>
-</dl>
+<div class="sourceCode" id="cb1" data-code-line-numbers="|1,2,3,4|6,7,8,9,10|12|13|14,15,16,17,18,19,20|23"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a>file_list <span class="ot">&lt;-</span> fs<span class="sc">::</span><span class="fu">dir_ls</span>(<span class="at">path =</span> <span class="st">"content/blog/"</span>, </span>
+<span id="cb1-2"><a href="#cb1-2"></a>                        <span class="at">recurse =</span> <span class="cn">TRUE</span>, </span>
+<span id="cb1-3"><a href="#cb1-3"></a>                        <span class="at">type =</span> <span class="st">"file"</span>, </span>
+<span id="cb1-4"><a href="#cb1-4"></a>                        <span class="at">glob =</span> <span class="st">"*.md"</span>) </span>
+<span id="cb1-5"><a href="#cb1-5"></a></span>
+<span id="cb1-6"><a href="#cb1-6"></a>datos <span class="ot">&lt;-</span> <span class="fu">tibble</span>(<span class="at">fecha =</span> <span class="fu">character</span>(), </span>
+<span id="cb1-7"><a href="#cb1-7"></a>                <span class="at">titulo =</span> <span class="fu">character</span>(),</span>
+<span id="cb1-8"><a href="#cb1-8"></a>                <span class="at">autor =</span> <span class="fu">character</span>(), </span>
+<span id="cb1-9"><a href="#cb1-9"></a>                <span class="at">year =</span> <span class="fu">character</span>(), </span>
+<span id="cb1-10"><a href="#cb1-10"></a>                <span class="at">contribution_type =</span> <span class="fu">character</span>())</span>
+<span id="cb1-11"><a href="#cb1-11"></a>                </span>
+<span id="cb1-12"><a href="#cb1-12"></a><span class="cf">for</span> (documento <span class="cf">in</span> file_list){ </span>
+<span id="cb1-13"><a href="#cb1-13"></a>  doc <span class="ot">&lt;-</span> rmarkdown<span class="sc">::</span><span class="fu">yaml_front_matter</span>(<span class="at">input =</span> <span class="fu">file.path</span>(documento)) </span>
+<span id="cb1-14"><a href="#cb1-14"></a>  datos <span class="ot">&lt;-</span> tibble<span class="sc">::</span><span class="fu">add_row</span>(datos, </span>
+<span id="cb1-15"><a href="#cb1-15"></a>                           <span class="at">fecha =</span> doc<span class="sc">$</span>date, </span>
+<span id="cb1-16"><a href="#cb1-16"></a>                           <span class="at">titulo =</span> doc<span class="sc">$</span>title, </span>
+<span id="cb1-17"><a href="#cb1-17"></a>                           <span class="at">autor =</span> doc<span class="sc">$</span>author, </span>
+<span id="cb1-18"><a href="#cb1-18"></a>                           <span class="at">year =</span> <span class="fu">as.character</span>(<span class="fu">year</span>(<span class="fu">date</span>(doc<span class="sc">$</span>date))), </span>
+<span id="cb1-19"><a href="#cb1-19"></a>                           <span class="at">contribution_type =</span> <span class="st">'blog post'</span> </span>
+<span id="cb1-20"><a href="#cb1-20"></a>                           )  </span>
+<span id="cb1-21"><a href="#cb1-21"></a>}</span>
+<span id="cb1-22"><a href="#cb1-22"></a></span>
+<span id="cb1-23"><a href="#cb1-23"></a><span class="fu">write_csv</span>(datos, <span class="st">"blog_post_authors_2023.csv"</span>)                 </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<aside class="notes">
+<p>We can visualize the network model. This is the full network of ten years of collaboration on writing blog post. The size of the node is the number of contributions. The colors are the cluster identified. The width of the edge is the number of time that collaboration happend.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="lets-see-an-example-with-the-blog-2" class="slide level2">
-<h2>Let’s see an example with the Blog</h2>
-<div class="sourceCode" id="annotated-cell-2"><pre class="sourceCode numberSource r code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode r"><a class="code-annotation-anchor" data-target-cell="annotated-cell-2" data-target-annotation="3" onclick="event.preventDefault();" href="">3</a><span id="annotated-cell-2-1" class="code-annotation-target"><a href="#annotated-cell-2-1"></a><span class="cf">for</span> (documento <span class="cf">in</span> file_list){</span>
-<a class="code-annotation-anchor" data-target-cell="annotated-cell-2" data-target-annotation="4" onclick="event.preventDefault();" href="">4</a><span id="annotated-cell-2-2" class="code-annotation-target"><a href="#annotated-cell-2-2"></a>  doc <span class="ot">&lt;-</span> rmarkdown<span class="sc">::</span><span class="fu">yaml_front_matter</span>(<span class="at">input =</span> <span class="fu">file.path</span>(documento))</span>
-<a class="code-annotation-anchor" data-target-cell="annotated-cell-2" data-target-annotation="5" onclick="event.preventDefault();" href="">5</a><span id="annotated-cell-2-3" class="code-annotation-target"><a href="#annotated-cell-2-3"></a>  datos <span class="ot">&lt;-</span> tibble<span class="sc">::</span><span class="fu">add_row</span>(datos,</span>
-<span id="annotated-cell-2-4"><a href="#annotated-cell-2-4"></a>                           <span class="at">fecha =</span> doc<span class="sc">$</span>date,</span>
-<span id="annotated-cell-2-5"><a href="#annotated-cell-2-5"></a>                           <span class="at">titulo =</span> doc<span class="sc">$</span>title,</span>
-<span id="annotated-cell-2-6"><a href="#annotated-cell-2-6"></a>                           <span class="at">autor =</span> doc<span class="sc">$</span>author,</span>
-<span id="annotated-cell-2-7"><a href="#annotated-cell-2-7"></a>                           <span class="at">year =</span> <span class="fu">as.character</span>(<span class="fu">year</span>(<span class="fu">date</span>(doc<span class="sc">$</span>date))),</span>
-<span id="annotated-cell-2-8"><a href="#annotated-cell-2-8"></a>                           <span class="at">contribution_type =</span> <span class="st">'blog post'</span></span>
-<span id="annotated-cell-2-9"><a href="#annotated-cell-2-9"></a>                           )  </span>
-<span id="annotated-cell-2-10"><a href="#annotated-cell-2-10"></a>}</span>
-<span id="annotated-cell-2-11"><a href="#annotated-cell-2-11"></a></span>
-<a class="code-annotation-anchor" data-target-cell="annotated-cell-2" data-target-annotation="6" onclick="event.preventDefault();" href="">6</a><span id="annotated-cell-2-12" class="code-annotation-target"><a href="#annotated-cell-2-12"></a><span class="fu">write_csv</span>(datos, <span class="st">"blog_post_authors_2023.csv"</span>)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<dl class="code-annotation-container-grid">
-<dt data-target-cell="annotated-cell-2" data-target-annotation="3">3</dt>
-<dd>
-<span data-code-cell="annotated-cell-2" data-code-lines="1" data-code-annotation="3">For each markdown document</span>
-</dd>
-<dt data-target-cell="annotated-cell-2" data-target-annotation="4">4</dt>
-<dd>
-<span data-code-cell="annotated-cell-2" data-code-lines="2" data-code-annotation="4">Read the YAML header, extract the value of each variable</span>
-</dd>
-<dt data-target-cell="annotated-cell-2" data-target-annotation="5">5</dt>
-<dd>
-<span data-code-cell="annotated-cell-2" data-code-lines="3,4,5,6,7,8" data-code-annotation="5">and add a row in the dataset with the information</span>
-</dd>
-<dt data-target-cell="annotated-cell-2" data-target-annotation="6">6</dt>
-<dd>
-<span data-code-cell="annotated-cell-2" data-code-lines="12" data-code-annotation="6">After process all the documents, we save the dataset to a CSV file ;-)</span>
-</dd>
-</dl>
-</section>
-<section id="lets-see-an-example-with-the-blog-3" class="slide level2">
 <h2>Let’s see an example with the Blog</h2>
 <p>TODO: add Sandro codes to convert the csv to a network format</p>
 </section>
 <section id="blog-post-full-network-2013-2023" class="slide level2">
 <h2>Blog-Post full network 2013-2023</h2>
-<p><img data-src="images/full_blog_post.png" class="r-stretch"> ::: {.notes} We can visualize the network model. This is the full network of ten years of collaboration on writing blog post. The size of the node is the number of contributions. The colors are the cluster identified. The width of the edge is the number of time that collaboration happend. :::</p>
-</section>
+
+<img data-src="images/full_blog_post.png" class="r-stretch quarto-figure-center"></section>
 <section id="we-can-analyze-it-annually" class="slide level2">
 <h2>We can analyze it annually</h2>
 <div class="columns">

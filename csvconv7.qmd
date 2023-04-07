@@ -269,22 +269,22 @@ Review a package
 
 ::: {.column width="33%"}
 
-![](images/engranajes.png){.fragment height="200" fig-align="center"}
+![](images/engranajes.png){.fragment height="180" fig-align="center"}
 
 Maintain a package
 
-![](images/hablar.png){.fragment height="200" fig-align="center"}
+![](images/hablar.png){.fragment height="180" fig-align="center"}
 
 Speak at a Comm Call 
 
 :::
 
 ::: {.column width="33%"}
-![](images/champion.png){.fragment height="200" fig-align="center"}
+![](images/champion.png){.fragment height="180" fig-align="center"}
 
 Become a champion
 
-![](images/idea.png){.fragment height="200" fig-align="center"}
+![](images/idea.png){.fragment height="180" fig-align="center"}
 
 Host a coworking session
 
@@ -297,21 +297,13 @@ Learn more: [rOpenSci Community Contributing Guide](https://contributing.ropensc
 :::
 
 ::: {.notes}
-Fortunately at rOpenSci we have a contribution guide, there is a whole book describing the different ways you can contribute to the community. For example, you can
-
-Write a blog post
-Review a package
-Maintain a package
-Speak at a Community Call
-Become a champion
-Host a coworking session
+Fortunately at rOpenSci we have a contribution guide, there is a whole book describing the different ways you can contribute to the community. For example, you can, Write a blog post, Review a package, Maintain a package, Speak at a Community Call, Become a champion, Host a coworking session. 
 
 Many of these forms of contribution can be made with other people and there we have our nodes and a connection between them.
 :::
 
 ## How we can represent and measure contributions? {.smaller}
 
-
 |Node | Edge | Type of contribution | Source |
 |-----|------|----------------------|--------|
 |Author | coauthorship| blog post, books, talks, interviews| Webpage |
@@ -319,34 +311,30 @@ Many of these forms of contribution can be made with other people and there we h
 
 ## How we can represent and measure contributions? {.smaller}
 
-
 |Node | Edge | Type of contribution | Source |
 |-----|------|----------------------|--------|
 |Author | coauthorship| blog post, books, talks, interviews| Webpage |
-|Participant | coorganization, speaker, attendee | community calls, co-working sessions, unconf| webpage |
+|Participant | coorganization, cospeaking, coattendence | community calls, co-working sessions, unconf| webpage |
 
 
 
 ## How we can represent and measure contributions? {.smaller}
-
 
 |Node | Edge | Type of contribution | Source |
 |-----|------|----------------------|--------|
 |Author | coauthorship| blog post, books, talks, interviews| Webpage |
 |Participant | coorganization, speaker, attendee | community calls, co-working sessions| webpage |
-|Mentor/Mentee | mentoring | champions program, package development| Data base, webpage|
+|Developers, Users | Codevelopment | Suite of packages, r-universe| Github, r-universe |
 
 
 ## How we can represent and measure contributions? {.smaller}
-
 
 |Node | Edge | Type of contribution | Source |
 |-----|------|----------------------|--------|
 |Author | coauthorship| blog post, books, talks, interviews| Webpage |
 |Participant | coorganization, speaker, attendee | community calls, co-working sessions| webpage |
-|Mentor/Mentee | mentoring | champions program, package development| Data base, webpage|
 |Developers, Users | development | Suite of packages, r-universe| Github, r-universe |
-
+|Author, editor, reviewers |package peer-review|Software & Stat Peer-review|Data base, GitHub |
 
 
 ## How we can represent and measure contributions? {.smaller}
@@ -361,49 +349,41 @@ Many of these forms of contribution can be made with other people and there we h
 
 
 ## Let's see an example with the Blog
+
 ![](images/yaml.png){fig-align="center"}
 
+## Let's see an example with the Blog  {.smaller}
 
-## Let's see an example with the Blog
+```{.r code-line-numbers="|1,2,3,4|6,7,8,9,10|12|13|14,15,16,17,18,19,20|23"}
+file_list <- fs::dir_ls(path = "content/blog/", 
+                        recurse = TRUE, 
+                        type = "file", 
+                        glob = "*.md") 
 
-``` r
-file_list <- fs::dir_ls(path = "content/blog/", # <1>
-                        recurse = TRUE, # <1>
-                        type = "file", # <1>
-                        glob = "*.md") # <1>
-
-datos <- tibble(fecha = character(), # <2>
-                titulo = character(), # <2>
-                autor = character(), # <2>
-                year = character(), # <2>
-                contribution_type = character()) # <2>
-
-
-```
-
-1. Read all the files in the `content/blog/` folder with the `.md` extension  
-2. Create a tibble with the variables to store: _date, title, author, year_ and _contribution_type_.
-
-## Let's see an example with the Blog
-
-``` r
-for (documento in file_list){ # <3>
-  doc <- rmarkdown::yaml_front_matter(input = file.path(documento)) # <4>
-  datos <- tibble::add_row(datos, # <5>
-                           fecha = doc$date, # <5>
-                           titulo = doc$title, # <5>
-                           autor = doc$author, # <5>
-                           year = as.character(year(date(doc$date))), # <5>
-                           contribution_type = 'blog post' # <5>
+datos <- tibble(fecha = character(), 
+                titulo = character(),
+                autor = character(), 
+                year = character(), 
+                contribution_type = character())
+                
+for (documento in file_list){ 
+  doc <- rmarkdown::yaml_front_matter(input = file.path(documento)) 
+  datos <- tibble::add_row(datos, 
+                           fecha = doc$date, 
+                           titulo = doc$title, 
+                           autor = doc$author, 
+                           year = as.character(year(date(doc$date))), 
+                           contribution_type = 'blog post' 
                            )  
 }
 
-write_csv(datos, "blog_post_authors_2023.csv") # <6>
+write_csv(datos, "blog_post_authors_2023.csv")                 
+
 ```
-3. For each markdown document
-4. Read the YAML header, extract the value of each variable
-5. and add a row in the dataset with the information
-6. After process all the documents, we save the dataset to a CSV file ;-)
+::: {.notes}
+We can visualize the network model. This is the full network of ten years of collaboration on writing blog post.  The size of the node is the number of contributions. The colors are the cluster identified. The width of the edge is the number of time that collaboration happend.
+:::
+
 
 ## Let's see an example with the Blog
 
@@ -411,10 +391,8 @@ TODO: add Sandro codes to convert the csv to a network format
 
 ## Blog-Post full network 2013-2023 
 
-![](images/full_blog_post.png){.r-stretch}
-::: {.notes}
-We can visualize the network model. This is the full network of ten years of collaboration on writing blog post.  The size of the node is the number of contributions. The colors are the cluster identified. The width of the edge is the number of time that collaboration happend.
-:::
+![](images/full_blog_post.png){fig-align="center"} 
+
 
 ##  We can analyze it annually 
 
@@ -432,7 +410,7 @@ We can visualize the network model. This is the full network of ten years of col
 ::::
 
 ::: {.notes}
-We can also have a network for each year and see how the model changes over time.  Now we also add the name of the author to the node.
+We can also have a network for each year and see how the model changes over time. Now we also add the name of the author to the node.
 :::
 
 ## We can identify contributors {.smaller}
@@ -469,25 +447,6 @@ __Top 10 contributors - Blog Post - No staff members__
 |Hugo Gruson|		6|	12|	0.037093|	0.010062|
 |Laura DeCicco|		6|	21|	0.051456|	0.017206|
 
-
-## We can identify contributors {.smaller}
-
-__Top 10 contributors - Blog Post - Non English content__
-
-|Name|Contributions|Degree|Centrality|Page Rank|
-|----|-----:|-----:|-----:|-----:|
-|Maëlle Salmon|		62|	27|	0.056691|	0.0373|
-|* Jeroen Ooms|		60|	6|	0.017068|	0.006525|
-|Yanina Bellini Saibene|		22|	10|	0.003602|	0.012463|
-|* Steffi LaZerte|		19|	15|	0.055117|	0.014585|
-|Alejandra Bellini|		5|	4|	0.0|	0.007113|
-|Lucio Casalla|		5|	4|	0.0|	0.007113|
-|Pachá (aka Mauricio Vargas Sepúlveda)|		5|	0|	0.0|	0.0|
-|Sébastien Rochette|		3|	4|	0.0|	0.005046|
-|Pao Corrales|		2|	3|	0.0|	0.003083|
-|Elio Campitelli|		2|	3|	0.0|	0.003083|
-
-* We did translation of blog post in English
 
 ## We can see all contribution together 
 

@@ -1,0 +1,59 @@
+## We can identify contributors {.smaller}
+
+__Top 10 contributors - Blog Post - Non English content__
+
+|Name|Contributions|Degree|Centrality|Page Rank|
+|----|-----:|-----:|-----:|-----:|
+|Maëlle Salmon|		62|	27|	0.056691|	0.0373|
+|* Jeroen Ooms|		60|	6|	0.017068|	0.006525|
+|Yanina Bellini Saibene|		22|	10|	0.003602|	0.012463|
+|* Steffi LaZerte|		19|	15|	0.055117|	0.014585|
+|Alejandra Bellini|		5|	4|	0.0|	0.007113|
+|Lucio Casalla|		5|	4|	0.0|	0.007113|
+|Pachá (aka Mauricio Vargas Sepúlveda)|		5|	0|	0.0|	0.0|
+|Sébastien Rochette|		3|	4|	0.0|	0.005046|
+|Pao Corrales|		2|	3|	0.0|	0.003083|
+|Elio Campitelli|		2|	3|	0.0|	0.003083|
+
+* We did translation of blog post in English
+
+
+
+``` r
+file_list <- fs::dir_ls(path = "content/blog/", # <1>
+                        recurse = TRUE, # <1>
+                        type = "file", # <1>
+                        glob = "*.md") # <1>
+
+datos <- tibble(fecha = character(), # <2>
+                titulo = character(), # <2>
+                autor = character(), # <2>
+                year = character(), # <2>
+                contribution_type = character()) # <2>
+
+
+```
+
+1. Read all the files in the `content/blog/` folder with the `.md` extension  
+2. Create a tibble with the variables to store: _date, title, author, year_ and _contribution_type_.
+
+## Let's see an example with the Blog
+
+``` r
+for (documento in file_list){ # <3>
+  doc <- rmarkdown::yaml_front_matter(input = file.path(documento)) # <4>
+  datos <- tibble::add_row(datos, # <5>
+                           fecha = doc$date, # <5>
+                           titulo = doc$title, # <5>
+                           autor = doc$author, # <5>
+                           year = as.character(year(date(doc$date))), # <5>
+                           contribution_type = 'blog post' # <5>
+                           )  
+}
+
+write_csv(datos, "blog_post_authors_2023.csv") # <6>
+```
+3. For each markdown document
+4. Read the YAML header, extract the value of each variable
+5. and add a row in the dataset with the information
+6. After process all the documents, we save the dataset to a CSV file ;-)
