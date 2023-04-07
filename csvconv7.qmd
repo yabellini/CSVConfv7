@@ -30,17 +30,17 @@ Why I'm talking about this? because In June last year, I become community Manage
 
 ## rOpenSci {.smaller}
 
-We creates __technical__ and __social infrastructure__ for __open and reproducible research__ that __lowers barriers__ to working with __scientific data__. 
+we are a group of people who passion is __open and reproducible research__ to everyone, buid it by everyone. And we know how to do it by creating __technical and social infrastructure__. 
 
 :::: {.columns}
 
 ::: {.column width="60%"}
 ::: {.incremental}
-- A suite of carefully vetted, federated R software tools
-- Making the right data, tools and best practices more discoverable
-- Welcoming and diverse community
-- Building capacity of software users and developers and fostering a sense of pride in their work 
-- Promoting advocacy for a culture of data sharing and reusable software
+- Creating a suite of carefully vetted, federated R software tools.
+- Making the right data, tools and best practices more discoverable.
+- Welcoming and diverse community.
+- Building capacity of software users and developers and fostering a sense of pride in their work. 
+- Promoting advocacy for a culture of data sharing and reusable software.
 :::
 :::
 
@@ -53,11 +53,11 @@ We creates __technical__ and __social infrastructure__ for __open and reproducib
 ::: {.notes}
 We do this creating a suite of carefully vetted, federated R software tools. Developers of research software send their package to our review process, and after they pass, the package is part of our suite. Developers get support on from our staff and from the community. Users get high quality software to do science.
 
-Making the right data, tools and best practices more discoverable. Our R-Universe platform allows to publish and search 18000+ packages, withour any size limittion and provide binaries for severals SO. 
+Making the right data, tools and best practices more discoverable. Our R-Universe platform allows to publish and search more than 18000 R packages. 
 
 Welcoming and diverse community through a code of conduct, our Champions Program and our multilingual publishing efforts. 
 
-Building capacity of software users and developers and fostering a sense of pride in their work with the projets I already mention, but also by publishing books, organizing community call and co-working session, higlighing developer with interviews and creating contect on our web pages, forum and newsletter.
+Building capacity of software users and developers and fostering a sense of pride in their work with the projets I already mention, but also by publishing online books, organizing community call and co-working session, higlighing developer with interviews and creating contect on our web pages, forum and newsletter.
 
 :::
 
@@ -78,6 +78,7 @@ A community manager in the context of a community of practice is a person that f
 
 :::
 
+# Let's analyze rOpenSci community
 
 # Why analyze our community?
 
@@ -527,7 +528,10 @@ __Top 10 contributors - Full Network__
 
 ## ¡Gracias, Thank you, Obrigada!
 
+- Source code: 
+
 - The pictures are adaptation by my 7yo and me to Images by [Freepik](https://www.freepik.com/free-vector/hand-drawn-colorful-stickman-collection_20884529.htm) on [hand drawn style stickman set](https://www.freepik.com/free-vector/hand-drawn-style-stickman-set_20884532.htm)
+- We use R, gephy, excalidraw and quarto for build this talk.
 
 - Thanks to the rOpenSci staff Team for the feedback on this talk.
 
