@@ -64,9 +64,22 @@ Building capacity of software users and developers and fostering a sense of prid
 
 ## Community Manager
 
-> **Facilitates** the **activities** of a community and the **interactions** between **community members.** Community management may be considered as “in-reach” rather than “outreach” or public engagement. - CSCCE
+:::: {.columns}
 
+::: {.column width="50%"}
+> **Facilitates** the **activities** of a community and the **interactions** between **community members.** 
+Community management may be considered as _“in-reach”_ rather than _“outreach”_ or public engagement. - CSCCE
+
+:::
+
+::: {.column width="50%"}
 ![](images/skills.svg) 
+:::
+
+::::
+
+
+
 
 
 ::: footer
@@ -113,7 +126,7 @@ We need to know our community connectivity to __plan targeted__ and __effective 
 Now, communities are built on connections, and those summaries and number don't give us many information about  the growth and strength of professional interpersonal connections in our community. 
 :::
 
-## Answer these questions
+## 
 
 ### At a given moment in time
 
@@ -143,7 +156,7 @@ We will try to answer questions like:
 
 Group of individuals who relate to others for a specific purpose, characterized by the existence of information flows.
 
-![](images/red_1.svg){.r-stretch}
+![](images/red_1.svg)
 ::: {.notes}
 Here is where Social Networks Analysis comes into play. I'm not talking about twitter or instagram here, I'm talking about networks build by individuals u organization that have some kind of relationship.
 :::
@@ -243,13 +256,13 @@ So we thought, is it possible that we already have that data in another format a
 :::: {.columns}
 
 ::: {.column width="33%"}
-![](images/escribiendo.png){height="200" fig-align="center"}
+![](images/escribiendo.png){height="180" fig-align="center"}
 
 Write a blog post
 
 
 
-![](images/telescopio.png){.fragment height="200" fig-align="center"}
+![](images/telescopio.png){.fragment height="180" fig-align="center"}
 
 Review a package
 :::
