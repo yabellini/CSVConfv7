@@ -133,7 +133,6 @@ Now, communities are built on connections, and those summaries and number don't 
 
 ::: {.notes}
 We will try to answer questions like:
-
 :::
 
 # How we can analyze our community connectivity?
@@ -145,12 +144,8 @@ We will try to answer questions like:
 Group of individuals who relate to others for a specific purpose, characterized by the existence of information flows.
 
 ![](images/red_1.svg){.r-stretch}
----
-
 ::: {.notes}
 Here is where Social Networks Analysis comes into play. I'm not talking about twitter or instagram here, I'm talking about networks build by individuals u organization that have some kind of relationship.
-
-
 :::
 
 ## Social Networks Analysis - Basic elements
