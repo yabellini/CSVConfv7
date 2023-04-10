@@ -514,7 +514,7 @@ __Top 10 contributors - Full Network__
 
 :::
 
-# My tips
+## My tips
 
 ::: {.incremental}
 
@@ -527,14 +527,15 @@ __Top 10 contributors - Full Network__
 
 :::
 
-# My tips
+## My tips
 
 ::: {.incremental}
 
 * You can take snapshot of the network model ... 
 * ... so you can compare it at different times.
 * ... so you can use it for evaluating the impact of interventions and programs.
-
+* Share what you find with your community
+* ... and other community managers.
 :::
 
 
