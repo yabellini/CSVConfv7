@@ -7,7 +7,7 @@ format:
       buttons: false
     preview-links: auto
     logo: images/lettering_black.svg
-    footer: <https://ropensci.org/>
+    footer: This talk is at <https://bit.ly/csvconf2023> 
 ---
 
 ![](images/presentacion.svg)
@@ -49,6 +49,10 @@ we are a group of people who passion is __open and reproducible research__ to ev
 :::
 
 ::::
+
+::: footer
+<https://ropensci.org>
+:::
 
 ::: {.notes}
 We do this creating a suite of carefully vetted, federated R software tools. Developers of research software send their package to our review process, and after they pass, the package is part of our suite. Developers get support on from our staff and from the community. Users get high quality software to do science.
@@ -455,20 +459,19 @@ R-universe Stars Interview Team
 
 ::: {.notes}
 Tell me with you hang out and i will tell you who you are ;-)
+
+We can also identify network members characteristics, like Maëlle Salmon have the max of contributions as active member and Noam Ross have the higest degree and the higest centrality. It is the most connected member.
+Laura DeCicco have the higest degree and it is not a staff member and Kara Woo have the higest centrlity.
+I have the max of contribution in other language than English, and Ale Bellini y Lucio Casalla have max contribution in other language than English, and aren't staff members.
+
 :::
 
 
-## We can identify network members characteristics {.smaller}
 
-* _Maëlle Salmon_ have the max of contributions as active member.
-* _Noam Ross_ have the higest degree. It is the most connected. And also have the higest centrality.
-* _Laura DeCicco_ is the no staff member that have the higest degree.
-* _Yani Bellini Saibene_ have the max of contribution in other language than English.
-* _Alejandra Bellini_ y _Lucio Casalla_ the no staff member that have the max contribution in other language than English.
 
 ## What's next? 
 
-### SNA can be use for a __descriptive__ and __exploratory__ analysis of your community.
+> SNA can be use for a __descriptive__ and __exploratory__ analysis of your community.
 
 
 ::: {.incremental}
@@ -528,7 +531,7 @@ Tell me with you hang out and i will tell you who you are ;-)
 :::: {.columns}
 
 ::: {.column width="60%"}
-- Slides: 
+- Slides: https://bit.ly/csvconf2023
 - Code: 
 - The pictures are adaptation by my 7yo son and me to [images by Freepik](https://www.freepik.com/free-vector/hand-drawn-colorful-stickman-collection_20884529.htm) on [hand drawn style stickman set](https://www.freepik.com/free-vector/hand-drawn-style-stickman-set_20884532.htm)
 - We use R, gephy, excalidraw and quarto for build this talk.
