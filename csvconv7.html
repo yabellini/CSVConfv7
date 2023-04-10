@@ -832,7 +832,7 @@
 <td>Participant</td>
 <td>coorganization, cospeaking, coattendence</td>
 <td>community calls, co-working sessions, unconf</td>
-<td>webpage</td>
+<td>Webpage</td>
 </tr>
 </tbody>
 </table>
@@ -863,9 +863,9 @@
 </tr>
 <tr class="even">
 <td>Participant</td>
-<td>coorganization, speaker, attendee</td>
-<td>community calls, co-working sessions</td>
-<td>webpage</td>
+<td>coorganization, cospeaking, coattendence</td>
+<td>community calls, co-working sessions, unconf</td>
+<td>Webpage</td>
 </tr>
 <tr class="odd">
 <td>Developers, Users</td>
@@ -902,13 +902,13 @@
 </tr>
 <tr class="even">
 <td>Participant</td>
-<td>coorganization, speaker, attendee</td>
-<td>community calls, co-working sessions</td>
-<td>webpage</td>
+<td>coorganization, cospeaking, coattendence</td>
+<td>community calls, co-working sessions, unconf</td>
+<td>Webpage</td>
 </tr>
 <tr class="odd">
 <td>Developers, Users</td>
-<td>development</td>
+<td>Codevelopment</td>
 <td>Suite of packages, r-universe</td>
 <td>Github, r-universe</td>
 </tr>
@@ -947,9 +947,9 @@
 </tr>
 <tr class="even">
 <td>Participant</td>
-<td>coorganization, speaker, attendee</td>
-<td>community calls, co-working sessions</td>
-<td>webpage</td>
+<td>coorganization, cospeaking, coattendence</td>
+<td>community calls, co-working sessions, unconf</td>
+<td>Webpage</td>
 </tr>
 <tr class="odd">
 <td>Developers, Users</td>
@@ -964,7 +964,7 @@
 <td>Data base, GitHub</td>
 </tr>
 <tr class="odd">
-<td>Mentor/Mentee</td>
+<td>Mentor, Mentee</td>
 <td>mentoring</td>
 <td>champions program, package development</td>
 <td>Data base, webpage</td>
@@ -1002,7 +1002,15 @@
 <span id="cb1-22"><a href="#cb1-22"></a></span>
 <span id="cb1-23"><a href="#cb1-23"></a><span class="fu">write_csv</span>(datos, <span class="st">"blog_post_authors_2023.csv"</span>) <span class="co"># ;-)                </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <aside class="notes">
-
+<ol type="1">
+<li>Read all the files in the <code>content/blog/</code> folder with the <code>.md</code> extension<br>
+</li>
+<li>Create a tibble with the variables to store: <em>date, title, author, year</em> and <em>contribution_type</em>.</li>
+<li>For each markdown document</li>
+<li>Read the YAML header, extract the value of each variable</li>
+<li>and add a row in the dataset with the information</li>
+<li>After process all the documents, we save the dataset to a CSV file ;-)</li>
+</ol>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -1022,12 +1030,14 @@
 <p><img data-src="images/network.png" height="350"></p>
 </figure>
 </div>
-<div class="sourceCode" id="cb2" data-code-line-numbers="|1|2|3|4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a>results <span class="ot">&lt;-</span> blogpost_authors <span class="sc">|&gt;</span> </span>
+<div class="sourceCode" id="cb2" data-code-line-numbers="|1|2|3|4|5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a>results <span class="ot">&lt;-</span> blogpost_authors <span class="sc">|&gt;</span> </span>
 <span id="cb2-2"><a href="#cb2-2"></a>  <span class="fu">group_by</span>(titulo, year) <span class="sc">|&gt;</span></span>
 <span id="cb2-3"><a href="#cb2-3"></a>  <span class="fu">filter</span>(<span class="fu">n</span>() <span class="sc">&gt;</span> <span class="dv">1</span>) <span class="sc">|&gt;</span> </span>
-<span id="cb2-4"><a href="#cb2-4"></a>  <span class="fu">summarise</span>(<span class="fu">as.data.frame</span>(<span class="fu">t</span>(<span class="fu">combn</span>(autor, <span class="dv">2</span>))))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-4"><a href="#cb2-4"></a>  <span class="fu">summarise</span>(<span class="fu">as.data.frame</span>(<span class="fu">t</span>(<span class="fu">combn</span>(autor, <span class="dv">2</span>)))) <span class="sc">|&gt;</span></span>
+<span id="cb2-5"><a href="#cb2-5"></a>  <span class="fu">select</span>(titulo, year, <span class="at">from=</span>V1, <span class="at">to=</span>V2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <aside class="notes">
-<p>the next step is to transform the list of author of each blog post in a table with network format</p>
+<p>the next step is to transform the list of author of each blog post in a table with network format.</p>
+<p>This code take the list we create in the previws step. Group by tile and year and keep all the blog post that have two authors or more. Then, for each group, the combn function create a matrix with two rows and columns representing all the unique combination of two authors. We transpose this data to get two columns that become <em>from</em> and <em>to</em>, epresenting the nodes.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;

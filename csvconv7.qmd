@@ -345,7 +345,7 @@ Many of these forms of contribution can be made with other people and there we h
 |Participant | coorganization, cospeaking, coattendence | community calls, co-working sessions, unconf| Webpage |
 |Developers, Users | Codevelopment | Suite of packages, r-universe| Github, r-universe |
 |Author, editor, reviewers |package peer-review|Software & Stat Peer-review|Data base, GitHub |
-|Mentor/Mentee | mentoring | champions program, package development| Data base, webpage|
+|Mentor, Mentee | mentoring | champions program, package development| Data base, Webpage|
 
 
 ## Let's see an example with the Blog
@@ -381,7 +381,12 @@ write_csv(datos, "blog_post_authors_2023.csv") # ;-)
 
 ```
 ::: {.notes}
-
+1. Read all the files in the `content/blog/` folder with the `.md` extension  
+2. Create a tibble with the variables to store: _date, title, author, year_ and _contribution_type_.
+3. For each markdown document
+4. Read the YAML header, extract the value of each variable
+5. and add a row in the dataset with the information
+6. After process all the documents, we save the dataset to a CSV file ;-)
 :::
 
 
