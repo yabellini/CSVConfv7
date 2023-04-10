@@ -387,7 +387,16 @@ We can visualize the network model. This is the full network of ten years of col
 
 ## Let's see an example with the Blog
 
-TODO: add Sandro codes to convert the csv to a network format
+the next step is to transform the list of author of each blog post in a table with network format
+
+``` {.r code-line-numbers="|1|2|3|4"}
+results <- blogpost_authors |> 
+  group_by(titulo, year) |>
+  filter(n() > 1) |> 
+  summarise(as.data.frame(t(combn(autor, 2))))
+
+```
+
 
 ## Blog-Post full network 2013-2023 
 
