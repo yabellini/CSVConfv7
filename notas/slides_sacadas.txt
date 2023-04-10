@@ -57,3 +57,38 @@ write_csv(datos, "blog_post_authors_2023.csv") # <6>
 4. Read the YAML header, extract the value of each variable
 5. and add a row in the dataset with the information
 6. After process all the documents, we save the dataset to a CSV file ;-)
+
+
+## We can identify contributors {.smaller}
+
+__Top 10 contributors - Blog Post__
+
+|Name|Contributions|Degree|Centrality|Page Rank|
+|----|-----:|-----:|-----:|-----:|
+|Scott Chamberlain|		98|	15|	0.03|	0.02|
+|Stefanie Butland|		72|	18|	0.04|	0.01|
+|Maëlle Salmon|		62	|27|	0.05|	0.03|
+|Jeroen Ooms|		60|	6|	0.01|	0.006|
+|Karthik Ram|		50|	19|	0.01|	0.03|
+|Noam Ross|		29|	33|	0.22|	0.03|
+|The rOpenSci Team|		24|	10|	0.001|	0.005|
+|Yanina Bellini Saibene|		22|	10|	0.003|	0.01|
+|Steffi LaZerte|		19|	15|	0.05|	0.01|
+|Mark Padgham|		16|	22|	0.06|	0.01|
+
+## We can identify contributors {.smaller}
+
+__Top 10 contributors - Blog Post - No staff members__
+
+|Name|Contributions|Degree|Centrality|Page Rank|
+|----|-----:|-----:|-----:|-----:|
+|Kara Woo|		11|	9|	9.09E-4|	0.010195|
+|Anna Krystalli|		9|	17|	0.003553|	0.020155|
+|Lincoln Mullen|		8|	13|	0.068667|	0.013976|
+|Melina Vidoni|		8|	14|	0.002583|	0.018365|
+|Brooke Anderson|		7|	20|	0.020534|	0.017369|
+|Kelly O'Briant|		7|	1|	0.0|	0.001375|
+|Nicholas Tierney|		7|	10|	0.054712|	0.007526|
+|Carl Boettiger|		6|	14|	0.067459|	0.009321|
+|Hugo Gruson|		6|	12|	0.037093|	0.010062|
+|Laura DeCicco|		6|	21|	0.051456|	0.017206|
