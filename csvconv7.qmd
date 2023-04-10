@@ -389,15 +389,18 @@ write_csv(datos, "blog_post_authors_2023.csv") # ;-)
 
 ![](images/network.png){height="350" fig-align="center"}
 
-``` {.r code-line-numbers="|1|2|3|4"}
+``` {.r code-line-numbers="|1|2|3|4|5"}
 results <- blogpost_authors |> 
   group_by(titulo, year) |>
   filter(n() > 1) |> 
-  summarise(as.data.frame(t(combn(autor, 2))))
+  summarise(as.data.frame(t(combn(autor, 2)))) |>
+  select(titulo, year, from=V1, to=V2)
 
 ```
 ::: {.notes}
-the next step is to transform the list of author of each blog post in a table with network format
+the next step is to transform the list of author of each blog post in a table with network format.
+
+This code take the list we create in the previws step. Group by tile and year and keep all the blog post that have two authors or more.  Then, for each group, the combn function create a matrix with two rows and columns representing all the unique combination of two authors. We transpose this data to get two columns that become _from_ and _to_, epresenting the nodes.
 
 :::
 
