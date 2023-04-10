@@ -377,17 +377,17 @@ for (documento in file_list){
                            )  
 }
 
-write_csv(datos, "blog_post_authors_2023.csv")                 
+write_csv(datos, "blog_post_authors_2023.csv") # ;-)                
 
 ```
 ::: {.notes}
-We can visualize the network model. This is the full network of ten years of collaboration on writing blog post.  The size of the node is the number of contributions. The colors are the cluster identified. The width of the edge is the number of time that collaboration happend.
+
 :::
 
 
 ## Let's see an example with the Blog
 
-the next step is to transform the list of author of each blog post in a table with network format
+![](images/network.png){height="350" fig-align="center"}
 
 ``` {.r code-line-numbers="|1|2|3|4"}
 results <- blogpost_authors |> 
@@ -396,6 +396,10 @@ results <- blogpost_authors |>
   summarise(as.data.frame(t(combn(autor, 2))))
 
 ```
+::: {.notes}
+the next step is to transform the list of author of each blog post in a table with network format
+
+:::
 
 
 ## Blog-Post full network 2013-2023 
@@ -479,9 +483,9 @@ __Top 10 contributors - Full Network__
 |Mauro Lepore|	74|	35	|0,02|	0,005|
 
 
-# SNA can be use for a __descriptive__ and __exploratory__ analysis of your community.
+## SNA can be use for a __descriptive__ and __exploratory__ analysis of your community.
 
-## Wath next for us? 
+### Wath next for us? 
 ::: {.incremental}
 * Complete and go deep with our analysis.
 * How can we add other types of contributions?
@@ -498,7 +502,7 @@ what if you were to do this type of analysis with your community?
 ![](images/leer.png){.r-stretch}
 
 
-## My tips 
+## My tips
 
 ::: {.incremental}
 
@@ -507,8 +511,6 @@ what if you were to do this type of analysis with your community?
     * Start with your paths for contributions.
     * Identify which contributions can be done in teams.
 * Probably you are alredy registering information about those type of connection.
-* You can automatize a portion of the data collection.
-    * Formalize the workflow (code ;-)) so you can repeat & reproduce
 
 :::
 
@@ -516,6 +518,8 @@ what if you were to do this type of analysis with your community?
 
 ::: {.incremental}
 
+* You can automatize a portion of the data collection.
+    * Formalize the workflow (code ;-)) so you can repeat & reproduce
 * It is hard to capture all type of interactions.
   * Take into account open/close/privacy of the data. 
 * Knowing the nodes will help to undertand the clusters and the interactions.
@@ -523,17 +527,44 @@ what if you were to do this type of analysis with your community?
 * You can take snapshot of the network model ... 
 * ... so you can use it for evaluating the impact of interventions and programs.
 
+:::
+
+# My tips{.smaller}
+
+::: {.incremental}
+
+* You can automatize a portion of the data collection.
+    * Formalize the workflow (code ;-)) so you can repeat & reproduce
+* It is hard to capture all type of interactions.
+  * Take into account open/close/privacy of the data. 
+* Knowing the nodes will help to undertand the clusters and the interactions.
+  * Lean on the people who have been in the network for the longest time.
+* You can take snapshot of the network model ... 
+* ... so you can use it for evaluating the impact of interventions and programs.
+
+:::
 
 
-## ¡Gracias, Thank you, Obrigada!
+## ¡Gracias, Thank you, Obrigada!{.smaller}
 
-- This slides: 
-- Source code: 
-- The pictures are adaptation by my 7yo and me to Images by [Freepik](https://www.freepik.com/free-vector/hand-drawn-colorful-stickman-collection_20884529.htm) on [hand drawn style stickman set](https://www.freepik.com/free-vector/hand-drawn-style-stickman-set_20884532.htm)
+:::: {.columns}
+
+::: {.column width="60%"}
+- Slides: 
+- Code: 
+- The pictures are adaptation by my 7yo son and me to [images by Freepik](https://www.freepik.com/free-vector/hand-drawn-colorful-stickman-collection_20884529.htm) on [hand drawn style stickman set](https://www.freepik.com/free-vector/hand-drawn-style-stickman-set_20884532.htm)
 - We use R, gephy, excalidraw and quarto for build this talk.
+- Thanks to the rOpenSci Staff Team, Elio and Ale for their feedback.
+:::
 
-- Thanks to the rOpenSci staff Team for the feedback on this talk.
+::: {.column width="40%"}
+![](images/hi-five.png)
+:::
+
+::::
 
 
-![](images/hi-five.png){.r-stretch}
+
+
+
 

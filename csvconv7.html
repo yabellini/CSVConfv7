@@ -1000,9 +1000,9 @@
 <span id="cb1-20"><a href="#cb1-20"></a>                           )  </span>
 <span id="cb1-21"><a href="#cb1-21"></a>}</span>
 <span id="cb1-22"><a href="#cb1-22"></a></span>
-<span id="cb1-23"><a href="#cb1-23"></a><span class="fu">write_csv</span>(datos, <span class="st">"blog_post_authors_2023.csv"</span>)                 </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-23"><a href="#cb1-23"></a><span class="fu">write_csv</span>(datos, <span class="st">"blog_post_authors_2023.csv"</span>) <span class="co"># ;-)                </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <aside class="notes">
-<p>We can visualize the network model. This is the full network of ten years of collaboration on writing blog post. The size of the node is the number of contributions. The colors are the cluster identified. The width of the edge is the number of time that collaboration happend.</p>
+
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -1017,7 +1017,28 @@
 </section>
 <section id="lets-see-an-example-with-the-blog-2" class="slide level2">
 <h2>Let’s see an example with the Blog</h2>
-<p>TODO: add Sandro codes to convert the csv to a network format</p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/network.png" height="350"></p>
+</figure>
+</div>
+<div class="sourceCode" id="cb2" data-code-line-numbers="|1|2|3|4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a>results <span class="ot">&lt;-</span> blogpost_authors <span class="sc">|&gt;</span> </span>
+<span id="cb2-2"><a href="#cb2-2"></a>  <span class="fu">group_by</span>(titulo, year) <span class="sc">|&gt;</span></span>
+<span id="cb2-3"><a href="#cb2-3"></a>  <span class="fu">filter</span>(<span class="fu">n</span>() <span class="sc">&gt;</span> <span class="dv">1</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb2-4"><a href="#cb2-4"></a>  <span class="fu">summarise</span>(<span class="fu">as.data.frame</span>(<span class="fu">t</span>(<span class="fu">combn</span>(autor, <span class="dv">2</span>))))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<aside class="notes">
+<p>the next step is to transform the list of author of each blog post in a table with network format</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="blog-post-full-network-2013-2023" class="slide level2">
 <h2>Blog-Post full network 2013-2023</h2>
@@ -1318,14 +1339,10 @@
 </tr>
 </tbody>
 </table>
-</section></section>
-<section>
-<section id="sna-can-be-use-for-a-descriptive-and-exploratory-analysis-of-your-community." class="title-slide slide level1 center">
-<h1>SNA can be use for a <strong>descriptive</strong> and <strong>exploratory</strong> analysis of your community.</h1>
-
 </section>
-<section id="wath-next-for-us" class="slide level2">
-<h2>Wath next for us?</h2>
+<section id="sna-can-be-use-for-a-descriptive-and-exploratory-analysis-of-your-community." class="slide level2">
+<h2>SNA can be use for a <strong>descriptive</strong> and <strong>exploratory</strong> analysis of your community.</h2>
+<h3 id="wath-next-for-us">Wath next for us?</h3>
 <div>
 <ul>
 <li class="fragment">Complete and go deep with our analysis.</li>
@@ -1341,7 +1358,7 @@
 <p>what if you were to do this type of analysis with your community?</p>
 <img data-src="images/leer.png" class="r-stretch">
 </section>
-<section id="my-tips" class="slide level2">
+<section id="my-tips" class="slide level2 smaller">
 <h2>My tips</h2>
 <div>
 <ul>
@@ -1360,32 +1377,38 @@
 </div>
 </section></section>
 <section>
-<section id="my-tips-1" class="title-slide slide level1 center">
+<section id="my-tips-1" class="title-slide slide level1 smaller center">
 <h1>My tips</h1>
-<p>::: {.incremental}</p>
+<div>
 <ul>
-<li>It is hard to capture all type of interactions.
+<li class="fragment">It is hard to capture all type of interactions.
 <ul>
-<li>Take into account open/close/privacy of the data.</li>
+<li class="fragment">Take into account open/close/privacy of the data.</li>
 </ul></li>
-<li>Knowing the nodes will help to undertand the clusters and the interactions.
+<li class="fragment">Knowing the nodes will help to undertand the clusters and the interactions.
 <ul>
-<li>Lean on the people who have been in the network for the longest time.</li>
+<li class="fragment">Lean on the people who have been in the network for the longest time.</li>
 </ul></li>
-<li>You can take snapshot of the network model …</li>
-<li>… so you can use it for evaluating the impact of interventions and programs.</li>
+<li class="fragment">You can take snapshot of the network model …</li>
+<li class="fragment">… so you can use it for evaluating the impact of interventions and programs.</li>
 </ul>
+</div>
 </section>
-<section id="gracias-thank-you-obrigada" class="slide level2">
+<section id="gracias-thank-you-obrigada" class="slide level2 smaller">
 <h2>¡Gracias, Thank you, Obrigada!</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
 <ul>
-<li><p>This slides:</p></li>
-<li><p>Source code:</p></li>
-<li><p>The pictures are adaptation by my 7yo and me to Images by <a href="https://www.freepik.com/free-vector/hand-drawn-colorful-stickman-collection_20884529.htm">Freepik</a> on <a href="https://www.freepik.com/free-vector/hand-drawn-style-stickman-set_20884532.htm">hand drawn style stickman set</a></p></li>
-<li><p>We use R, gephy, excalidraw and quarto for build this talk.</p></li>
-<li><p>Thanks to the rOpenSci staff Team for the feedback on this talk.</p></li>
+<li>Slides:</li>
+<li>Code:</li>
+<li>The pictures are adaptation by my 7yo son and me to <a href="https://www.freepik.com/free-vector/hand-drawn-colorful-stickman-collection_20884529.htm">images by Freepik</a> on <a href="https://www.freepik.com/free-vector/hand-drawn-style-stickman-set_20884532.htm">hand drawn style stickman set</a></li>
+<li>We use R, gephy, excalidraw and quarto for build this talk.</li>
+<li>Thanks to the rOpenSci Staff Team, Elio and Ale for their feedback.</li>
 </ul>
-<img data-src="images/hi-five.png" class="r-stretch">
+</div><div class="column" style="width:40%;">
+<p><img data-src="images/hi-five.png"></p>
+</div>
+</div>
 <p><img src="images/lettering_black.svg" class="slide-logo"></p>
 <div class="footer footer-default">
 <p><a href="https://ropensci.org/" class="uri">https://ropensci.org/</a></p>
