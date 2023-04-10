@@ -434,7 +434,7 @@ This code take the list we create in the previws step. Group by tile and year an
 We can also have a network for each year and see how the model changes over time. Now we also add the name of the author to the node.
 :::
 
-## All contribution together and zoom on clusters {.smaller}
+## All contribution together {.smaller}
 
 :::: {.columns}
 
@@ -458,9 +458,7 @@ Tell me with you hang out and i will tell you who you are ;-)
 :::
 
 
-## We can identify contributors characteristics
-
-### Blog post network
+## We can identify network members characteristics {.smaller}
 
 * _Maëlle Salmon_ have the max of contributions as active member.
 * _Noam Ross_ have the higest degree. It is the most connected. And also have the higest centrality.
