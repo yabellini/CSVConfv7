@@ -483,9 +483,11 @@ __Top 10 contributors - Full Network__
 |Mauro Lepore|	74|	35	|0,02|	0,005|
 
 
-## SNA can be use for a __descriptive__ and __exploratory__ analysis of your community.
+## What's next? 
 
-### Wath next for us? 
+### SNA can be use for a __descriptive__ and __exploratory__ analysis of your community.
+
+
 ::: {.incremental}
 * Complete and go deep with our analysis.
 * How can we add other types of contributions?
@@ -494,9 +496,7 @@ __Top 10 contributors - Full Network__
 :::
 
 
-# What next for you? 
-
-what if you were to do this type of analysis with your community?
+## What if you wanted to do the same for your community?
 
 
 ![](images/leer.png){.r-stretch}
@@ -519,27 +519,20 @@ what if you were to do this type of analysis with your community?
 ::: {.incremental}
 
 * You can automatize a portion of the data collection.
-    * Formalize the workflow (code ;-)) so you can repeat & reproduce
+    * Formalize the workflow (code ;-)) so you can repeat & reproduce.
 * It is hard to capture all type of interactions.
   * Take into account open/close/privacy of the data. 
-* Knowing the nodes will help to undertand the clusters and the interactions.
+* Knowing the nodes help to undertand the clusters and the interactions.
   * Lean on the people who have been in the network for the longest time.
-* You can take snapshot of the network model ... 
-* ... so you can use it for evaluating the impact of interventions and programs.
 
 :::
 
-# My tips{.smaller}
+# My tips
 
 ::: {.incremental}
 
-* You can automatize a portion of the data collection.
-    * Formalize the workflow (code ;-)) so you can repeat & reproduce
-* It is hard to capture all type of interactions.
-  * Take into account open/close/privacy of the data. 
-* Knowing the nodes will help to undertand the clusters and the interactions.
-  * Lean on the people who have been in the network for the longest time.
 * You can take snapshot of the network model ... 
+* ... so you can compare it at different times.
 * ... so you can use it for evaluating the impact of interventions and programs.
 
 :::
