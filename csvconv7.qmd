@@ -452,11 +452,6 @@ __Top 10 contributors - Blog Post - No staff members__
 
 ![](images/full_network.png){.r-stretch}
 
-## and analyze it geographically 
-
-![](images/countries.png){.r-stretch}
-
-
 ## We can identify contributors {.smaller}
 
 __Top 10 contributors - Full Network__
@@ -475,20 +470,9 @@ __Top 10 contributors - Full Network__
 |Mauro Lepore|	74|	35	|0,02|	0,005|
 
 
-## Take aways
-::: {.incremental}
-* SNA can be use for a descriptive and exploratory analysis of your community.
-* You need to define the type(s) of connection you have in your network.
-* Probably you are alredy registering information about those type of connection.
-* You can automatize a portion of the data collection.
-* It is hard to capture all type of interactions (close/open data).
-* Knowing the nodes will help to undertand the clusters and the interactions.
-* You can take snapshot of the network model ... 
-* ... we want to use it for evaluating the impact of interventions and programs.
+# SNA can be use for a __descriptive__ and __exploratory__ analysis of your community.
 
-:::
-
-## Work in progress 
+## Wath next for us? 
 ::: {.incremental}
 * Complete and go deep with our analysis.
 * How can we add other types of contributions?
@@ -496,13 +480,46 @@ __Top 10 contributors - Full Network__
 * Add direction to the links, to map information flow.
 :::
 
+
+# What next for you? 
+
+what if you were to do this type of analysis with your community?
+
+
 ![](images/leer.png){.r-stretch}
+
+
+## My tips 
+
+::: {.incremental}
+
+* Define the nodes in your network (people, countries, organizations, ...) 
+* Define the type(s) of connection you have in your network.
+    * Start with your paths for contributions.
+    * Identify which contributions can be done in teams.
+* Probably you are alredy registering information about those type of connection.
+* You can automatize a portion of the data collection.
+    * Formalize the workflow (code ;-)) so you can repeat & reproduce
+
+:::
+
+# My tips
+
+::: {.incremental}
+
+* It is hard to capture all type of interactions.
+  * Take into account open/close/privacy of the data. 
+* Knowing the nodes will help to undertand the clusters and the interactions.
+  * Lean on the people who have been in the network for the longest time.
+* You can take snapshot of the network model ... 
+* ... so you can use it for evaluating the impact of interventions and programs.
+
 
 
 ## ¡Gracias, Thank you, Obrigada!
 
+- This slides: 
 - Source code: 
-
 - The pictures are adaptation by my 7yo and me to Images by [Freepik](https://www.freepik.com/free-vector/hand-drawn-colorful-stickman-collection_20884529.htm) on [hand drawn style stickman set](https://www.freepik.com/free-vector/hand-drawn-style-stickman-set_20884532.htm)
 - We use R, gephy, excalidraw and quarto for build this talk.
 
