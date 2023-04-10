@@ -314,7 +314,7 @@ Many of these forms of contribution can be made with other people and there we h
 |Node | Edge | Type of contribution | Source |
 |-----|------|----------------------|--------|
 |Author | coauthorship| blog post, books, talks, interviews| Webpage |
-|Participant | coorganization, cospeaking, coattendence | community calls, co-working sessions, unconf| webpage |
+|Participant | coorganization, cospeaking, coattendence | community calls, co-working sessions, unconf| Webpage |
 
 
 
@@ -323,7 +323,7 @@ Many of these forms of contribution can be made with other people and there we h
 |Node | Edge | Type of contribution | Source |
 |-----|------|----------------------|--------|
 |Author | coauthorship| blog post, books, talks, interviews| Webpage |
-|Participant | coorganization, speaker, attendee | community calls, co-working sessions| webpage |
+|Participant | coorganization, cospeaking, coattendence | community calls, co-working sessions, unconf| Webpage |
 |Developers, Users | Codevelopment | Suite of packages, r-universe| Github, r-universe |
 
 
@@ -332,8 +332,8 @@ Many of these forms of contribution can be made with other people and there we h
 |Node | Edge | Type of contribution | Source |
 |-----|------|----------------------|--------|
 |Author | coauthorship| blog post, books, talks, interviews| Webpage |
-|Participant | coorganization, speaker, attendee | community calls, co-working sessions| webpage |
-|Developers, Users | development | Suite of packages, r-universe| Github, r-universe |
+|Participant | coorganization, cospeaking, coattendence | community calls, co-working sessions, unconf| Webpage |
+|Developers, Users | Codevelopment | Suite of packages, r-universe| Github, r-universe |
 |Author, editor, reviewers |package peer-review|Software & Stat Peer-review|Data base, GitHub |
 
 
@@ -342,7 +342,7 @@ Many of these forms of contribution can be made with other people and there we h
 |Node | Edge | Type of contribution | Source |
 |-----|------|----------------------|--------|
 |Author | coauthorship| blog post, books, talks, interviews| Webpage |
-|Participant | coorganization, speaker, attendee | community calls, co-working sessions| webpage |
+|Participant | coorganization, cospeaking, coattendence | community calls, co-working sessions, unconf| Webpage |
 |Developers, Users | Codevelopment | Suite of packages, r-universe| Github, r-universe |
 |Author, editor, reviewers |package peer-review|Software & Stat Peer-review|Data base, GitHub |
 |Mentor/Mentee | mentoring | champions program, package development| Data base, webpage|
@@ -536,6 +536,7 @@ __Top 10 contributors - Full Network__
 * ... so you can use it for evaluating the impact of interventions and programs.
 * Share what you find with your community
 * ... and other community managers.
+
 :::
 
 
