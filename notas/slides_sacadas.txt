@@ -92,3 +92,21 @@ __Top 10 contributors - Blog Post - No staff members__
 |Carl Boettiger|		6|	14|	0.067459|	0.009321|
 |Hugo Gruson|		6|	12|	0.037093|	0.010062|
 |Laura DeCicco|		6|	21|	0.051456|	0.017206|
+
+
+## We can identify contributors {.smaller}
+
+__Top 10 contributors - Full Network__
+
+|Name|Contributions|Degree|Centrality|Page Rank|
+|----|-----:|-----:|-----:|-----:|
+|Maelle Salmon|	254|	110|	0,12|	0,019|
+|Scott Chamberlain|	250|	134|	0,22|	0,022|
+|Karthik Ram|	189	|67	|0,06|	0,014|
+|Noam Ross|	189	|73	|0,09|	0,013|
+|Anna Krystalli|	118|	39	|0,01|	0,008|
+|Laura DeCicco|	96|	55	|0,06|	0,007|
+|Brooke Anderson|	91|	43|	0,02|0,006|
+|Mark Padgham|	89|	53	|0,03|	0,007|
+|Melina Vidoni|	85|	21	|0,02|	0,006|
+|Mauro Lepore|	74|	35	|0,02|	0,005|
