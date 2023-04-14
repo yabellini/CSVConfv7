@@ -534,7 +534,7 @@ I have the max of contribution in other language than English, and Ale Bellini y
 - Slides: https://bit.ly/csvconf2023
 - The pictures are adaptation by my 7yo son and me to [images by Freepik](https://www.freepik.com/free-vector/hand-drawn-colorful-stickman-collection_20884529.htm) on [hand drawn style stickman set](https://www.freepik.com/free-vector/hand-drawn-style-stickman-set_20884532.htm)
 - We use R, gephy, excalidraw and quarto for build this talk.
-- Thanks to the rOpenSci Staff Team, Elio and Ale for their feedback.
+- Thanks to the rOpenSci Staff Team, Elio, Ale and my English Conversation Club for their feedback.
 :::
 
 ::: {.column width="40%"}
