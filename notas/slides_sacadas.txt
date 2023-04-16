@@ -110,3 +110,16 @@ __Top 10 contributors - Full Network__
 |Mark Padgham|	89|	53	|0,03|	0,007|
 |Melina Vidoni|	85|	21	|0,02|	0,006|
 |Mauro Lepore|	74|	35	|0,02|	0,005|
+
+
+## What's next? 
+
+> SNA can be use for a __descriptive__ and __exploratory__ analysis of your community.
+
+
+::: {.incremental}
+* Complete and go deep with our analysis.
+* How can we add other types of contributions?
+* The nodes can be organizations, communities, institutions.
+* Add direction to the links, to map information flow.
+:::
