@@ -1,3 +1,50 @@
+## How we can represent and measure contributions? {.smaller}
+
+|Node | Edge | Type of contribution | Source |
+|-----|------|----------------------|--------|
+|Author | coauthorship| blog post, books, talks, interviews| Webpage |
+
+
+## How we can represent and measure contributions? {.smaller}
+
+|Node | Edge | Type of contribution | Source |
+|-----|------|----------------------|--------|
+|Author | coauthorship| blog post, books, talks, interviews| Webpage |
+|Participant | coorganization, cospeaking, coattendence | community calls, co-working sessions, unconf| Webpage |
+
+
+
+## How we can represent and measure contributions? {.smaller}
+
+|Node | Edge | Type of contribution | Source |
+|-----|------|----------------------|--------|
+|Author | coauthorship| blog post, books, talks, interviews| Webpage |
+|Participant | coorganization, cospeaking, coattendence | community calls, co-working sessions, unconf| Webpage |
+|Developers, Users | Codevelopment | Suite of packages, r-universe| Github, r-universe |
+
+
+## How we can represent and measure contributions? {.smaller}
+
+|Node | Edge | Type of contribution | Source |
+|-----|------|----------------------|--------|
+|Author | coauthorship| blog post, books, talks, interviews| Webpage |
+|Participant | coorganization, cospeaking, coattendence | community calls, co-working sessions, unconf| Webpage |
+|Developers, Users | Codevelopment | Suite of packages, r-universe| Github, r-universe |
+|Author, editor, reviewers |package peer-review|Software & Stat Peer-review|Data base, GitHub |
+
+
+## How we can represent and measure contributions? {.smaller}
+
+|Node | Edge | Type of contribution | Source |
+|-----|------|----------------------|--------|
+|Author | coauthorship| blog post, books, talks, interviews| Webpage |
+|Participant | coorganization, cospeaking, coattendence | community calls, co-working sessions, unconf| Webpage |
+|Developers, Users | Codevelopment | Suite of packages, r-universe| Github, r-universe |
+|Author, editor, reviewers |package peer-review|Software & Stat Peer-review|Data base, GitHub |
+|Mentor, Mentee | mentoring | champions program, package development| Data base, Webpage|
+
+
+
 ## We can identify contributors {.smaller}
 
 __Top 10 contributors - Blog Post - Non English content__
