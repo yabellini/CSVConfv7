@@ -506,7 +506,7 @@ R-universe Stars Interview Team
 Tell me with you hang out and i will tell you who you are ;-)
 
 We can also identify network members characteristics, like Maëlle Salmon have the max of contributions as active member and Noam Ross have the higest degree and the higest centrality. It is the most connected member.
-Laura DeCicco have the higest degree and it is not a staff member and Kara Woo have the higest centrlity.
+Laura DeCicco have the higest degree and it is not a staff member and Kara Woo have the higest centrality.
 I have the max of contribution in other language than English, and Ale Bellini y Lucio Casalla have max contribution in other language than English, and aren't staff members.
 
 :::
