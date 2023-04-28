@@ -504,8 +504,7 @@
 <h1>Why analyze our community?</h1>
 <img data-src="images/question_dos.png" class="r-stretch">
 <aside class="notes">
-<p>essentially because by knowing your community you can do a better job in the role of community manager.</p>
-<p>rOpenSci records a lot of data and generates statistics and summaries, for example, how many packages we reviewed, how many blog posts we wrote, how many community calls we organized and how many people came. This are very useful and show us an overal idea of our community and our activities.</p>
+<p>essentially because by knowing your community you can do a better job in the role of community manager. rOpenSci records a lot of data and generates statistics and summaries, for example, how many packages we reviewed, how many blog posts we wrote, how many community calls we organized and how many people came. This are very useful and show us an overal idea of our community and our activities.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -587,7 +586,20 @@
 <section id="social-networks-analysis" class="slide level2">
 <h2>Social Networks Analysis</h2>
 <p>Group of individuals who relate to others for a specific purpose, characterized by the existence of information flows.</p>
-<p><img data-src="images/red_1.svg"> ::: {.notes} Here is where Social Networks Analysis comes into play. I’m not talking about twitter or instagram here, I’m talking about networks build by individuals u organization that have some kind of relationship. :::</p>
+
+<img data-src="images/red_1.svg" class="r-stretch"><aside class="notes">
+<p>Here is where Social Networks Analysis comes into play. I’m not talking about twitter or instagram here, I’m talking about networks build by individuals u organization that have some kind of relationship.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="social-networks-analysis---basic-elements" class="slide level2">
 <h2>Social Networks Analysis - Basic elements</h2>
@@ -940,7 +952,7 @@
 <p><img data-src="images/network.png" height="350"></p>
 </figure>
 </div>
-<div class="sourceCode" id="cb2" data-code-line-numbers="|1|2|3|4|5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a>results <span class="ot">&lt;-</span> blogpost_authors <span class="sc">|&gt;</span> </span>
+<div class="sourceCode" id="cb2" data-code-line-numbers="|1|2|3|4|5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a>results <span class="ot">&lt;-</span> datos <span class="sc">|&gt;</span> </span>
 <span id="cb2-2"><a href="#cb2-2"></a>  <span class="fu">group_by</span>(titulo, year) <span class="sc">|&gt;</span></span>
 <span id="cb2-3"><a href="#cb2-3"></a>  <span class="fu">filter</span>(<span class="fu">n</span>() <span class="sc">&gt;</span> <span class="dv">1</span>) <span class="sc">|&gt;</span> </span>
 <span id="cb2-4"><a href="#cb2-4"></a>  <span class="fu">summarise</span>(<span class="fu">as.data.frame</span>(<span class="fu">t</span>(<span class="fu">combn</span>(autor, <span class="dv">2</span>)))) <span class="sc">|&gt;</span></span>
@@ -1083,7 +1095,8 @@
 <div class="columns">
 <div class="column" style="width:60%;">
 <ul>
-<li>Slides: https://bit.ly/csvconf2023</li>
+<li>Slides: <a href="https://bit.ly/csvconf2023" class="uri">https://bit.ly/csvconf2023</a></li>
+<li>GitHub: <a href="https://github.com/yabellini/CSVConfv7" class="uri">https://github.com/yabellini/CSVConfv7</a></li>
 <li>The pictures are adaptation by my 7yo son and me to <a href="https://www.freepik.com/free-vector/hand-drawn-colorful-stickman-collection_20884529.htm">images by Freepik</a> on <a href="https://www.freepik.com/free-vector/hand-drawn-style-stickman-set_20884532.htm">hand drawn style stickman set</a></li>
 <li>We use R, gephy, excalidraw and quarto for build this talk.</li>
 <li>Thanks to the rOpenSci Staff Team, Elio, Ale and my English Conversation Club for their feedback.</li>

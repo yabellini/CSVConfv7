@@ -62,7 +62,6 @@ Making the right data, tools and best practices more discoverable. Our R-Univers
 Welcoming and diverse community through a code of conduct, our Champions Program and our multilingual publishing efforts. 
 
 Building capacity of software users and developers and fostering a sense of pride in their work with the projets I already mention, but also by publishing online books, organizing community call and co-working session, higlighing developer with interviews and creating contect on our web pages, forum and newsletter.
-
 :::
 
 
@@ -83,16 +82,12 @@ Community management may be considered as _“in-reach”_ rather than _“outre
 ::::
 
 
-
-
-
 ::: footer
 Learn more: [What is Community Engagement Within Science?](https://www.cscce.org/about/community-engagement/), [What does a scientific community manager do?](https://www.cscce.org/2021/01/25/what-does-a-scientific-community-manager-do-check-out-the-cscce-skills-wheel-and-accompanying-guidebook/)
 :::
 
 ::: {.notes}
 A community manager in the context of a community of practice is a person that facilitates the activities of a community and the interaction with their members.  Have responsabilities in task in technical, interpersonal, communication, program management and program development aspect.
-
 :::
 
 # Let's analyze rOpenSci community
@@ -102,10 +97,7 @@ A community manager in the context of a community of practice is a person that f
 ![](images/question_dos.png){.r-stretch}
 
 ::: {.notes}
-essentially because by knowing your community you can do a better job in the role of community manager.
-
-rOpenSci records a lot of data and generates statistics and summaries, for example, how many packages we reviewed, how many blog posts we wrote, how many community calls we organized and how many people came. This are very useful and show us an overal idea of our community and our activities.
-
+essentially because by knowing your community you can do a better job in the role of community manager. rOpenSci records a lot of data and generates statistics and summaries, for example, how many packages we reviewed, how many blog posts we wrote, how many community calls we organized and how many people came. This are very useful and show us an overal idea of our community and our activities.
 :::
 
 
@@ -161,6 +153,7 @@ We will try to answer questions like:
 Group of individuals who relate to others for a specific purpose, characterized by the existence of information flows.
 
 ![](images/red_1.svg)
+
 ::: {.notes}
 Here is where Social Networks Analysis comes into play. I'm not talking about twitter or instagram here, I'm talking about networks build by individuals u organization that have some kind of relationship.
 :::
@@ -444,7 +437,7 @@ write_csv(datos, "blog_post_authors_2023.csv") # ;-)
 ![](images/network.png){height="350" fig-align="center"}
 
 ``` {.r code-line-numbers="|1|2|3|4|5"}
-results <- blogpost_authors |> 
+results <- datos |> 
   group_by(titulo, year) |>
   filter(n() > 1) |> 
   summarise(as.data.frame(t(combn(autor, 2)))) |>
@@ -455,7 +448,6 @@ results <- blogpost_authors |>
 the next step is to transform the list of author of each blog post in a table with network format.
 
 This code take the list we create in the previws step. Group by tile and year and keep all the blog post that have two authors or more.  Then, for each group, the combn function create a matrix with two rows and columns representing all the unique combination of two authors. We transpose this data to get two columns that become _from_ and _to_, epresenting the nodes.
-
 :::
 
 
@@ -561,7 +553,8 @@ I have the max of contribution in other language than English, and Ale Bellini y
 :::: {.columns}
 
 ::: {.column width="60%"}
-- Slides: https://bit.ly/csvconf2023
+- Slides: <https://bit.ly/csvconf2023>
+- GitHub: <https://github.com/yabellini/CSVConfv7>
 - The pictures are adaptation by my 7yo son and me to [images by Freepik](https://www.freepik.com/free-vector/hand-drawn-colorful-stickman-collection_20884529.htm) on [hand drawn style stickman set](https://www.freepik.com/free-vector/hand-drawn-style-stickman-set_20884532.htm)
 - We use R, gephy, excalidraw and quarto for build this talk.
 - Thanks to the rOpenSci Staff Team, Elio, Ale and my English Conversation Club for their feedback.
