@@ -10,3 +10,7 @@ Communities of practice are spaces where people share knowledge and contribute t
 ## Resumen
 
 Las comunidades de práctica son espacios donde las personas comparten conocimientos y contribuyen a objetivos individuales y de grupo. Conocer los diferentes tipos de miembros de la comunidad, las diferentes formas en que pueden participar, qué tipo de colaboraciones existen, y entre quiénes, es un insumo importante para entender la comunidad y poder tomar acciones para mejorar diferentes aspectos de la comunidad, como el compromiso de los miembros, llegar a una audiencia más amplia, y aumentar la diversidad, entre otros. En esta charla, presentaremos un análisis de las redes de rOpenSci desde sus inicios para reconocer tipos y temas de colaboraciones, actores en esas colaboraciones y subcomunidades, entre otros aspectos. Explicaremos cómo recopilamos la información para alimentar las redes (por ejemplo, autoría de entradas de blog, organización de eventos, autoría de paquetes, revisión de paquetes, entre otros), cómo la procesamos y qué tipo de acciones de gestión de la comunidad podemos tomar basándonos en los resultados obtenidos. Todo el código fuente y los datos que puedan ser públicos se compartirán en un repositorio.
+
+## Cite as
+
+> Yanina Bellini Saibene, & Sandro Camargo. (2023, April 27). Tell me who you hang out with and I'll tell you who you are: a collaborative analysis using social network analysis. CSV,Conf,v7, Buenos Aires, Argentina. Zenodo. https://doi.org/10.5281/zenodo.7875640
